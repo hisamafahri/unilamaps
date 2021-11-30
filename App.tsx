@@ -1,10 +1,18 @@
+import { NavigationContainer } from '@react-navigation/native'
 import React, { ReactElement } from 'react'
-import { Text, View } from 'react-native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Welcome from './src/screens/auth/Welcome';
+import Login from './src/screens/auth/Login';
+
+const Stack = createNativeStackNavigator();
 
 export default function App(): ReactElement {
   return (
-    <View style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Hello, world!</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Welcome" component={Welcome} />
+        <Stack.Screen name="Login" component={Login} />
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
