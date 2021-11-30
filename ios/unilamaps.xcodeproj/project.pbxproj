@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* unilamapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* unilamapsTests.m */; };
+		092316E1423749D8BD9D071A /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FE2A03052EE45B3BD9492FA /* Rubik-Black.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1F27470C832844AAA693981E /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05BB4B0ACBF04E61A6CAB6AF /* Rubik-Bold.ttf */; };
 		6172F2D35A4C3AA820D92908 /* libPods-unilamaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-unilamaps.a */; };
+		6796585F8F324869AC2E0EF9 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 656F5599B4D94C1FA1E4499E /* Rubik-ExtraBold.ttf */; };
 		7EF68E3733C33B6898317E18 /* libPods-unilamaps-unilamapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-unilamaps-unilamapsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		EC41C11A57D7487BAF6ACE12 /* MavenPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCC1DA29B68E4F28B579F0B2 /* MavenPro-Black.ttf */; };
-		A817D977AE244477B7127E69 /* MavenPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B37B5DC6FC9C4C34BD07F5F7 /* MavenPro-Bold.ttf */; };
-		83851B9E870B42379B720B37 /* MavenPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2B5C6610E2349479192EC54 /* MavenPro-ExtraBold.ttf */; };
-		46F15C2761204065A62B947F /* MavenPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9724E6CAEC7142C5988B185D /* MavenPro-Medium.ttf */; };
-		10867B2775C64FD58BC7C5A8 /* MavenPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3237274D44C4A1292920C63 /* MavenPro-Regular.ttf */; };
-		FEF64FF6F4894EC891467D9B /* MavenPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5364765F8F8F45DBB24823E3 /* MavenPro-SemiBold.ttf */; };
+		860A211FAF0F4125B8A79FA8 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A325A239CEC4B7D99F32AF4 /* Rubik-Italic.ttf */; };
+		AEBEB0449DE240CFB0662575 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D862A4E940A343BE93B79F22 /* Rubik-Light.ttf */; };
+		B9A72892F8C44359915BB753 /* Rubik-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 624BBF1C4D3247549C539026 /* Rubik-SemiBold.ttf */; };
+		BFE14CFA20FB413DBD3A6658 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BE16D6CE263457A9FBA8815 /* Rubik-Medium.ttf */; };
+		FF249C1A9C4D4EAEB3E7997F /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6C59BAD1D5043C78D8129F7 /* Rubik-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		00E356EE1AD99517003FC87E /* unilamapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unilamapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* unilamapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unilamapsTests.m; sourceTree = "<group>"; };
+		05BB4B0ACBF04E61A6CAB6AF /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../assets/fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* unilamaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unilamaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = unilamaps/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = unilamaps/AppDelegate.m; sourceTree = "<group>"; };
@@ -43,19 +46,26 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = unilamaps/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = unilamaps/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-unilamaps-unilamapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps-unilamapsTests.release.xcconfig"; path = "Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5364765F8F8F45DBB24823E3 /* MavenPro-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-SemiBold.ttf"; path = "../assets/fonts/MavenPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		5FE2A03052EE45B3BD9492FA /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../assets/fonts/Rubik-Black.ttf"; sourceTree = "<group>"; };
+		624BBF1C4D3247549C539026 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-unilamaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unilamaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F5599B4D94C1FA1E4499E /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBold.ttf"; path = "../assets/fonts/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-unilamaps-unilamapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps-unilamapsTests.debug.xcconfig"; path = "Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = unilamaps/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A325A239CEC4B7D99F32AF4 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../assets/fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
+		9724E6CAEC7142C5988B185D /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Medium.ttf"; path = "../assets/fonts/MavenPro-Medium.ttf"; sourceTree = "<group>"; };
+		9BE16D6CE263457A9FBA8815 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-unilamaps-unilamapsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unilamaps-unilamapsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37B5DC6FC9C4C34BD07F5F7 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Bold.ttf"; path = "../assets/fonts/MavenPro-Bold.ttf"; sourceTree = "<group>"; };
+		B6C59BAD1D5043C78D8129F7 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		C0A881CF5CF3F2B244570E2A /* Pods-unilamaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps.debug.xcconfig"; path = "Target Support Files/Pods-unilamaps/Pods-unilamaps.debug.xcconfig"; sourceTree = "<group>"; };
+		CCC1DA29B68E4F28B579F0B2 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Black.ttf"; path = "../assets/fonts/MavenPro-Black.ttf"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-unilamaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps.release.xcconfig"; path = "Target Support Files/Pods-unilamaps/Pods-unilamaps.release.xcconfig"; sourceTree = "<group>"; };
+		D862A4E940A343BE93B79F22 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
+		E2B5C6610E2349479192EC54 /* MavenPro-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-ExtraBold.ttf"; path = "../assets/fonts/MavenPro-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E3237274D44C4A1292920C63 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Regular.ttf"; path = "../assets/fonts/MavenPro-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		CCC1DA29B68E4F28B579F0B2 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; name = "MavenPro-Black.ttf"; path = "../assets/fonts/MavenPro-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B37B5DC6FC9C4C34BD07F5F7 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; name = "MavenPro-Bold.ttf"; path = "../assets/fonts/MavenPro-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E2B5C6610E2349479192EC54 /* MavenPro-ExtraBold.ttf */ = {isa = PBXFileReference; name = "MavenPro-ExtraBold.ttf"; path = "../assets/fonts/MavenPro-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9724E6CAEC7142C5988B185D /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; name = "MavenPro-Medium.ttf"; path = "../assets/fonts/MavenPro-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E3237274D44C4A1292920C63 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; name = "MavenPro-Regular.ttf"; path = "../assets/fonts/MavenPro-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5364765F8F8F45DBB24823E3 /* MavenPro-SemiBold.ttf */ = {isa = PBXFileReference; name = "MavenPro-SemiBold.ttf"; path = "../assets/fonts/MavenPro-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DFDEBC9D259C4DEF8878BCE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCC1DA29B68E4F28B579F0B2 /* MavenPro-Black.ttf */,
+				B37B5DC6FC9C4C34BD07F5F7 /* MavenPro-Bold.ttf */,
+				E2B5C6610E2349479192EC54 /* MavenPro-ExtraBold.ttf */,
+				9724E6CAEC7142C5988B185D /* MavenPro-Medium.ttf */,
+				E3237274D44C4A1292920C63 /* MavenPro-Regular.ttf */,
+				5364765F8F8F45DBB24823E3 /* MavenPro-SemiBold.ttf */,
+				5FE2A03052EE45B3BD9492FA /* Rubik-Black.ttf */,
+				05BB4B0ACBF04E61A6CAB6AF /* Rubik-Bold.ttf */,
+				656F5599B4D94C1FA1E4499E /* Rubik-ExtraBold.ttf */,
+				8A325A239CEC4B7D99F32AF4 /* Rubik-Italic.ttf */,
+				D862A4E940A343BE93B79F22 /* Rubik-Light.ttf */,
+				9BE16D6CE263457A9FBA8815 /* Rubik-Medium.ttf */,
+				B6C59BAD1D5043C78D8129F7 /* Rubik-Regular.ttf */,
+				624BBF1C4D3247549C539026 /* Rubik-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,23 +189,8 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-unilamaps-unilamapsTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-unilamaps-unilamapsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		DFDEBC9D259C4DEF8878BCE7 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				CCC1DA29B68E4F28B579F0B2 /* MavenPro-Black.ttf */,
-				B37B5DC6FC9C4C34BD07F5F7 /* MavenPro-Bold.ttf */,
-				E2B5C6610E2349479192EC54 /* MavenPro-ExtraBold.ttf */,
-				9724E6CAEC7142C5988B185D /* MavenPro-Medium.ttf */,
-				E3237274D44C4A1292920C63 /* MavenPro-Regular.ttf */,
-				5364765F8F8F45DBB24823E3 /* MavenPro-SemiBold.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -272,12 +288,14 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				EC41C11A57D7487BAF6ACE12 /* MavenPro-Black.ttf in Resources */,
-				A817D977AE244477B7127E69 /* MavenPro-Bold.ttf in Resources */,
-				83851B9E870B42379B720B37 /* MavenPro-ExtraBold.ttf in Resources */,
-				46F15C2761204065A62B947F /* MavenPro-Medium.ttf in Resources */,
-				10867B2775C64FD58BC7C5A8 /* MavenPro-Regular.ttf in Resources */,
-				FEF64FF6F4894EC891467D9B /* MavenPro-SemiBold.ttf in Resources */,
+				092316E1423749D8BD9D071A /* Rubik-Black.ttf in Resources */,
+				1F27470C832844AAA693981E /* Rubik-Bold.ttf in Resources */,
+				6796585F8F324869AC2E0EF9 /* Rubik-ExtraBold.ttf in Resources */,
+				860A211FAF0F4125B8A79FA8 /* Rubik-Italic.ttf in Resources */,
+				AEBEB0449DE240CFB0662575 /* Rubik-Light.ttf in Resources */,
+				BFE14CFA20FB413DBD3A6658 /* Rubik-Medium.ttf in Resources */,
+				FF249C1A9C4D4EAEB3E7997F /* Rubik-Regular.ttf in Resources */,
+				B9A72892F8C44359915BB753 /* Rubik-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

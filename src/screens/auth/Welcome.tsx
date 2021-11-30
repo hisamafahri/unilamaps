@@ -1,14 +1,47 @@
 import React, { ReactElement } from 'react'
-import { Text, TouchableHighlight, View } from 'react-native'
+import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
+import TargetIcon from '../../../assets/svg/helper/TargetIcon';
 import Base from '../../component/container/Base'
+import { COLORS } from '../../constant/Color';
 
-export default function Welcome({navigation}: any): ReactElement {
+export default function Welcome({ navigation }: any): ReactElement {
     return (
         <Base>
-            <Text style={{fontFamily: 'MavenPro-Black'}}>Welcome Page</Text>
-            <TouchableHighlight onPress={() => navigation.navigate('Login')}>
-                <Text>Go</Text>
-            </TouchableHighlight>
+            <View style={styles.locationPinner}>
+                <TargetIcon />
+                <Text style={styles.pinnerText}>Jl Seroja</Text>
+            </View>
+            <View style={styles.welcomeTextContainer}>
+                <Text style={styles.welcomeText}>Selamat Datang di</Text>
+                <Text style={styles.welcomeText}>Universitas Lampung</Text>
+            </View>
         </Base>
     )
 }
+
+const styles = StyleSheet.create({
+    locationPinner: {
+        marginTop: 12,
+        marginHorizontal: 16,
+        alignSelf: 'flex-start',
+        paddingHorizontal: 16,
+        paddingVertical: 12,
+        backgroundColor: COLORS.white,
+        borderRadius: 100,
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    pinnerText: {
+        marginLeft: 12,
+        fontFamily: 'Rubik-Regular',
+        fontSize: 14
+    },
+    welcomeTextContainer: {
+        marginTop: 36
+    },
+    welcomeText: {
+        textAlign: 'center'
+    }
+});

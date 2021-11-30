@@ -53,12 +53,14 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>MavenPro-Black.ttf</string>
-		<string>MavenPro-Bold.ttf</string>
-		<string>MavenPro-ExtraBold.ttf</string>
-		<string>MavenPro-Medium.ttf</string>
-		<string>MavenPro-Regular.ttf</string>
-		<string>MavenPro-SemiBold.ttf</string>
+		<string>Rubik-Black.ttf</string>
+		<string>Rubik-Bold.ttf</string>
+		<string>Rubik-ExtraBold.ttf</string>
+		<string>Rubik-Italic.ttf</string>
+		<string>Rubik-Light.ttf</string>
+		<string>Rubik-Medium.ttf</string>
+		<string>Rubik-Regular.ttf</string>
+		<string>Rubik-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>
