@@ -12,7 +12,7 @@ import TargetIcon from '../../../assets/svg/helper/TargetIcon';
 import Base from '../../component/container/Base'
 import { COLORS } from '../../constant/Color';
 
-export default function Welcome({ navigation }: any): ReactElement {
+export default function Home({ navigation }: any): ReactElement {
     return (
         <Base>
             <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={styles.locationPinnerContainer}>
@@ -23,7 +23,7 @@ export default function Welcome({ navigation }: any): ReactElement {
             </TouchableHighlight>
             <View style={styles.welcomeTextContainer}>
                 <Text style={styles.welcomeText}>Selamat Datang di</Text>
-                <Text style={[styles.welcomeText, { fontFamily: 'Rubik-Medium' }]}>Universitas Lampung!</Text>
+                <Text style={[styles.welcomeText, { fontFamily: 'Rubik-Medium', color: COLORS.secondaryPurple }]}>Universitas Lampung</Text>
                 <Text style={styles.bigText}>Mau ngapain {'\n'}hari ini?</Text>
             </View>
 
@@ -108,7 +108,8 @@ const styles = StyleSheet.create({
         fontSize: 14
     },
     welcomeTextContainer: {
-        marginTop: 36
+        marginTop: 36,
+        marginBottom: 28,
     },
     welcomeText: {
         color: COLORS.textGrey,
