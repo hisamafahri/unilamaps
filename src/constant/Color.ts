@@ -4,5 +4,7 @@ export const COLORS = {
     white: '#FFFFFF',
     underlayWhite: '#B9D4DC',
     textGrey: '#434445',
+    mainPurple: '#3E1B72',
     secondaryPurple: '#6F5897',
+    inactivePurple: '#B9D4DC'
 }

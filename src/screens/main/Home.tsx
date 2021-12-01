@@ -134,8 +134,6 @@ const styles = StyleSheet.create({
     },
     contentBox: {
         borderRadius: 16,
-        // maxWidth: 96,
-        // maxHeight: 96,
         paddingHorizontal: 24,
         paddingVertical: 16,
         display: 'flex',
