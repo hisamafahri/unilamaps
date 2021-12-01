@@ -10,6 +10,7 @@ import SportIcon from '../../../assets/svg/activities/SportIcon';
 import ToiletIcon from '../../../assets/svg/activities/ToiletIcon';
 import TargetIcon from '../../../assets/svg/helper/TargetIcon';
 import Base from '../../component/container/Base'
+import GroupBox from '../../component/navigation/GroupBox';
 import { COLORS } from '../../constant/Color';
 
 export default function Home({ navigation }: any): ReactElement {
@@ -28,58 +29,18 @@ export default function Home({ navigation }: any): ReactElement {
             </View>
 
             <View style={styles.contentBoxContainer}>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <BookIcon />
-                        <Text style={styles.contentBoxText}>Kuliah</Text>
-                    </View>
-                </TouchableHighlight>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <FoodIcon />
-                        <Text style={styles.contentBoxText}>Makan</Text>
-                    </View>
-                </TouchableHighlight>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <LabIcon />
-                        <Text style={styles.contentBoxText}>Praktikum</Text>
-                    </View>
-                </TouchableHighlight>
+                <GroupBox onPress={() => { }} label='Kuliah' icon={<BookIcon />} />
+                <GroupBox onPress={() => { }} label='Makan' icon={<FoodIcon />} />
+                <GroupBox onPress={() => { }} label='Praktikum' icon={<LabIcon />} />
             </View>
             <View style={styles.contentBoxContainer}>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <PrayIcon />
-                        <Text style={styles.contentBoxText}>Ibadah</Text>
-                    </View>
-                </TouchableHighlight>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <ToiletIcon />
-                        <Text style={styles.contentBoxText}>Toilet</Text>
-                    </View>
-                </TouchableHighlight>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <SportIcon />
-                        <Text style={styles.contentBoxText}>Olahraga</Text>
-                    </View>
-                </TouchableHighlight>
+                <GroupBox onPress={() => { }} label='Ibadah' icon={<PrayIcon />} />
+                <GroupBox onPress={() => { }} label='Toilet' icon={<ToiletIcon />} />
+                <GroupBox onPress={() => { }} label='Olahraga' icon={<SportIcon />} />
             </View>
             <View style={styles.contentBoxContainer}>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <ParkingIcon />
-                        <Text style={styles.contentBoxText}>Parkir</Text>
-                    </View>
-                </TouchableHighlight>
-                <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={{ borderRadius: 16, }}>
-                    <View style={styles.contentBox}>
-                        <AdministrationIcon />
-                        <Text style={styles.contentBoxText}>Admin</Text>
-                    </View>
-                </TouchableHighlight>
+                <GroupBox onPress={() => { }} label='Parkir' icon={<ParkingIcon />} />
+                <GroupBox onPress={() => { }} label='Admin' icon={<AdministrationIcon />} />
             </View>
         </Base>
     )
