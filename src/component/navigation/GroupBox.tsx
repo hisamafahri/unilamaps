@@ -2,12 +2,12 @@ import React, { ReactElement } from 'react'
 import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import { COLORS } from '../../constant/Color'
 
-export default function GroupBox({ onPress, label, icon, style }: any): ReactElement {
+export default function GroupBox({ onPress, label, icon, style, backgroundColor = COLORS.white, labelColor = COLORS.black }: any): ReactElement {
     return (
-        <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={onPress} style={{ borderRadius: 16, ...style }}>
+        <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={onPress} style={{ backgroundColor, borderRadius: 16, ...style }}>
             <View style={styles.contentBox}>
                 {icon}
-                <Text style={styles.contentBoxText}>{label}</Text>
+                <Text style={[styles.contentBoxText, { color: labelColor }]}>{label}</Text>
             </View>
         </TouchableHighlight>
     )
@@ -22,10 +22,8 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: COLORS.white
     },
     contentBoxText: {
-        color: COLORS.black,
         marginTop: 8,
         fontFamily: 'Rubik-Regular',
         textAlign: 'center',

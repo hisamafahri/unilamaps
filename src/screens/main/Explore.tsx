@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState } from 'react'
 import { ScrollView, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import FEBIcon from '../../../assets/svg/faculty/FEBIcon'
 import FHIcon from '../../../assets/svg/faculty/FHIcon'
@@ -15,6 +15,7 @@ import GroupBox from '../../component/navigation/GroupBox'
 import { COLORS } from '../../constant/Color'
 
 export default function Explore(): ReactElement {
+    const [selectedArea, setSelectedArea] = useState('uni')
     return (
         <Base>
             <View style={styles.headerContainer}>
@@ -28,15 +29,15 @@ export default function Explore(): ReactElement {
             </View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 <View style={styles.facultySliderContainer}>
-                    <GroupBox onPress={() => { }} label='Universitas' icon={<UniversityIcon strokeBlack={COLORS.black} strokePurple={COLORS.mainPurple} />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FEB' icon={<FEBIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FH' icon={<FHIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FISIP' icon={<FISIPIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FK' icon={<FKIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FKIP' icon={<FKIPIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FMIPA' icon={<FMIPAIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FP' icon={<FPIcon />} style={{ marginRight: 12 }} />
-                    <GroupBox onPress={() => { }} label='FT' icon={<FTIcon />} />
+                    <GroupBox onPress={() => { setSelectedArea('uni') }} label='Universitas' backgroundColor={selectedArea == 'uni' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'uni' ? COLORS.white : COLORS.black} icon={<UniversityIcon strokeBlack={selectedArea == 'uni' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'uni' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('feb') }} label='FEB' backgroundColor={selectedArea == 'feb' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'feb' ? COLORS.white : COLORS.black} icon={<FEBIcon strokeBlack={selectedArea == 'feb' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'feb' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('fh') }} label='FH' backgroundColor={selectedArea == 'fh' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'fh' ? COLORS.white : COLORS.black} icon={<FHIcon strokeBlack={selectedArea == 'fh' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'fh' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('fisip') }} label='FISIP' backgroundColor={selectedArea == 'fisip' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'fisip' ? COLORS.white : COLORS.black} icon={<FISIPIcon strokeBlack={selectedArea == 'fisip' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'fisip' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('fk') }} label='FK' backgroundColor={selectedArea == 'fk' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'fk' ? COLORS.white : COLORS.black} icon={<FKIcon strokeBlack={selectedArea == 'fk' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'fk' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('fkip') }} label='FKIP' backgroundColor={selectedArea == 'fkip' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'fkip' ? COLORS.white : COLORS.black} icon={<FKIPIcon strokeBlack={selectedArea == 'fkip' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'fkip' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('fmipa') }} label='FMIPA' backgroundColor={selectedArea == 'fmipa' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'fmipa' ? COLORS.white : COLORS.black} icon={<FMIPAIcon strokeBlack={selectedArea == 'fmipa' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'fmipa' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('fp') }} label='FP' backgroundColor={selectedArea == 'fp' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'fp' ? COLORS.white : COLORS.black} icon={<FPIcon strokeBlack={selectedArea == 'fp' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'fp' ? COLORS.white : COLORS.brightPurple} />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { setSelectedArea('ft') }} label='FT' backgroundColor={selectedArea == 'ft' ? COLORS.mainPurple : COLORS.white} labelColor={selectedArea == 'ft' ? COLORS.white : COLORS.black} icon={<FTIcon strokeBlack={selectedArea == 'ft' ? COLORS.white : COLORS.black} strokePurple={selectedArea == 'ft' ? COLORS.white : COLORS.brightPurple} />} />
                 </View>
             </ScrollView>
 
