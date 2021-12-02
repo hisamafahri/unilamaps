@@ -42,6 +42,9 @@ export default function Home({ navigation }: any): ReactElement {
                 <GroupBox onPress={() => { }} label='Parkir' icon={<ParkingIcon />} />
                 <GroupBox onPress={() => { }} label='Admin' icon={<AdministrationIcon />} />
             </View>
+
+            {/* To make sure the content still visible (24px) on top of bottom bar navigation */}
+            <View style={{height: 144, width: '100%'}}></View>
         </Base>
     )
 }
@@ -64,6 +67,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     pinnerText: {
+        color: COLORS.black,
         marginLeft: 12,
         fontFamily: 'Rubik-Regular',
         fontSize: 14

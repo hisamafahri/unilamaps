@@ -28,7 +28,7 @@ export default function Explore(): ReactElement {
             </View>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                 <View style={styles.facultySliderContainer}>
-                    <GroupBox onPress={() => { }} label='Universitas' icon={<UniversityIcon />} style={{ marginRight: 12 }} />
+                    <GroupBox onPress={() => { }} label='Universitas' icon={<UniversityIcon strokeBlack={COLORS.black} strokePurple={COLORS.mainPurple} />} style={{ marginRight: 12 }} />
                     <GroupBox onPress={() => { }} label='FEB' icon={<FEBIcon />} style={{ marginRight: 12 }} />
                     <GroupBox onPress={() => { }} label='FH' icon={<FHIcon />} style={{ marginRight: 12 }} />
                     <GroupBox onPress={() => { }} label='FISIP' icon={<FISIPIcon />} style={{ marginRight: 12 }} />
@@ -39,13 +39,16 @@ export default function Explore(): ReactElement {
                     <GroupBox onPress={() => { }} label='FT' icon={<FTIcon />} />
                 </View>
             </ScrollView>
+
+            {/* To make sure the content still visible (24px) on top of bottom bar navigation */}
+            <View style={{height: 144, width: '100%'}}></View>
         </Base>
     )
 }
 
 const styles = StyleSheet.create({
     headerContainer: {
-        marginTop: 12,
+        marginTop: 24,
         marginHorizontal: 16,
         paddingRight: 16,
         display: 'flex',
