@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react'
-import { ScrollView, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
+import { Image, ScrollView, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import FEBIcon from '../../../assets/svg/faculty/FEBIcon'
 import FHIcon from '../../../assets/svg/faculty/FHIcon'
 import FISIPIcon from '../../../assets/svg/faculty/FISIPIcon'
@@ -12,11 +12,15 @@ import UniversityIcon from '../../../assets/svg/faculty/University'
 import SearchIcon from '../../../assets/svg/helper/SearchIcon'
 import Base from '../../component/container/Base'
 import GroupBox from '../../component/navigation/GroupBox'
+import LocationBox from '../../component/navigation/LocationBox'
 import { COLORS } from '../../constant/Color'
 
-export default function Explore(): ReactElement {
+// const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
+const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
+
+export default function Explore({navigation}:any): ReactElement {
     const [selectedArea, setSelectedArea] = useState('uni')
-    const [areaText, setAreaText] = useState('area')
+    const [areaText, setAreaText] = useState('Area Universitas')
     function changeAreaText(area: any) {
         if (area == 'uni') {
             setAreaText('Area Universitas')
@@ -65,8 +69,13 @@ export default function Explore(): ReactElement {
                 </View>
             </ScrollView>
 
-            <View style={{ marginHorizontal: 16, marginTop: 24 }}>
+            <View style={{ marginHorizontal: 16, marginTop: 24, marginBottom: 12 }}>
                 <Text style={styles.areaText}>{areaText}</Text>
+            </View>
+
+            <View>
+                <LocationBox onPress={() => { navigation.navigate('Location') }} imageUrl={imageUrl} label='Gedung Rektorat' subLabel='Area Universitas' />
+                <LocationBox onPress={() => { }} imageUrl={imageUrl} label='Masjid Al-Wasi&apos;i' subLabel='Area Universitas' />
             </View>
 
             {/* To make sure the content still visible (24px) on top of bottom bar navigation */}
@@ -111,5 +120,5 @@ const styles = StyleSheet.create({
         color: COLORS.mainPurple,
         fontFamily: 'Rubik-Medium',
         fontSize: 20,
-    }
+    },
 });

@@ -8,6 +8,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import BottomBar from './src/component/navigation/BottomBar';
 import Weather from './src/screens/main/Weather';
 import More from './src/screens/main/More';
+import Location from './src/screens/navigation/Location';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -23,16 +24,22 @@ const MyTheme = {
 export default function App(navigation: any): ReactElement {
   return (
     <NavigationContainer theme={MyTheme}>
-      {/* <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
-        <Stack.Screen name="Login" component={Login} />
-      </Stack.Navigator> */}
-      <Tab.Navigator tabBar={(props) => <BottomBar {...props} />}>
-        <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
-        <Tab.Screen name="Explore" component={Explore} options={{ headerShown: false }} />
-        <Tab.Screen name="Weather" component={Weather} options={{ headerShown: false }} />
-        <Tab.Screen name="More" component={More} options={{ headerShown: false }} />
-      </Tab.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="TabNav" component={TabNav} options={{ headerShown: false }} />
+        <Stack.Screen name="Location" component={Location} options={{ headerShown: false }} />
+      </Stack.Navigator>
     </NavigationContainer>
   )
+}
+
+
+function TabNav() {
+  return (
+    <Tab.Navigator tabBar={(props) => <BottomBar {...props} />}>
+      <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
+      <Tab.Screen name="Explore" component={Explore} options={{ headerShown: false }} />
+      <Tab.Screen name="Weather" component={Weather} options={{ headerShown: false }} />
+      <Tab.Screen name="More" component={More} options={{ headerShown: false }} />
+    </Tab.Navigator>
+  );
 }
