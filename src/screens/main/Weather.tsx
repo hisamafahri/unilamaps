@@ -38,31 +38,31 @@ export default function Weather(): ReactElement {
         await axios.get(weatherApiEndpoint)
             .then(async (currentWeather: any) => {
                 const weatherCode = currentWeather.data.weather[0].icon
-                if (weatherCode == '01d') { // Clear sky
+                if (weatherCode == '01d' || weatherCode == '01n') { // Clear sky
                     setWeatherIcon(<SunnyIcon />)
                     setWeatherDetail('Kayaknya bakal panas nih! \nJangan sampai dehidrasi ya.')
-                } else if (weatherCode == '02d') { // Few clouds
+                } else if (weatherCode == '02d' || weatherCode == '02n') { // Few clouds
                     setWeatherIcon(<SunnyCloudIcon />)
                     setWeatherDetail('Nah cuacanya enak nih, \nmain di luar yuk!')
-                } else if (weatherCode == '03d') { // Single cloud
+                } else if (weatherCode == '03d' || weatherCode == '03n') { // Single cloud
                     setWeatherIcon(<CloudIcon />)
                     setWeatherDetail('Ada awan-awan yang \nbisa nemenin kegiatan kamu nih!')
-                } else if (weatherCode == '04d') { // Scattered clouds
+                } else if (weatherCode == '04d' || weatherCode == '04n') { // Scattered clouds
                     setWeatherIcon(<ScatteredCloudsIcon />)
                     setWeatherDetail('Nah, cocok nih. \nCuacanya pas buat santai sejenak.')
-                } else if (weatherCode == '09d') { // Shower rain
+                } else if (weatherCode == '09d' || weatherCode == '09n') { // Shower rain
                     setWeatherIcon(<RainIcon />)
                     setWeatherDetail('Hmmm... Hujan nih. \nJangan lupa sedia payung ya!')
                 } else if (weatherCode == '10d') { // Sunny Rain
                     setWeatherIcon(<SunnyRainIcon />)
                     setWeatherDetail('Kayaknya mau hujan, nih. \nJaga kesahatan selalu ya.')
-                } else if (weatherCode == '11d') { // Thunderstorm
+                } else if (weatherCode == '11d' || weatherCode == '11n') { // Thunderstorm
                     setWeatherIcon(<ThunderstormIcon />)
                     setWeatherDetail('Hujan deres!!! \nMari santai sejenak!')
-                } else if (weatherCode == '13d') { // Snow
+                } else if (weatherCode == '13d' || weatherCode == '13n') { // Snow
                     setWeatherIcon(<SnowIcon />)
                     setWeatherDetail('Dingin bangettt... \nAwas demam ya!')
-                } else if (weatherCode == '50d') { // Mist
+                } else if (weatherCode == '50d' || weatherCode == '50n') { // Mist
                     setWeatherIcon(<MistIcon />)
                     setWeatherDetail('Berkabut nih! \nYang mau keluar hati-hati ya!')
                 } else {
