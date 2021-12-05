@@ -9,6 +9,9 @@ import BottomBar from './src/component/navigation/BottomBar';
 import Weather from './src/screens/main/Weather';
 import More from './src/screens/main/More';
 import Location from './src/screens/navigation/Location';
+import About from './src/screens/more/About';
+import TermsAndConditions from './src/screens/more/TermsAndConditions';
+import PrivacyPolicy from './src/screens/more/PrivacyPolicy';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -27,6 +30,11 @@ export default function App(navigation: any): ReactElement {
       <Stack.Navigator>
         <Stack.Screen name="TabNav" component={TabNav} options={{ headerShown: false }} />
         <Stack.Screen name="Location" component={Location} options={{ headerShown: false }} />
+        
+        {/* More */}
+        <Stack.Screen name="About" component={About} options={{ headerShown: false }} />
+        <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} options={{ headerShown: true, title: 'Kebijakan Privasi' }} />
+        <Stack.Screen name="TermsAndConditions" component={TermsAndConditions} options={{ headerShown: true, title: 'Syarat & Ketentuan' }} />
       </Stack.Navigator>
     </NavigationContainer>
   )

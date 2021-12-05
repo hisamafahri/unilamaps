@@ -10,7 +10,7 @@ import { COLORS } from '../../constant/Color';
 
 let screenWidth = Dimensions.get("window").width;
 
-export default function More(): ReactElement {
+export default function More({ navigation }: any): ReactElement {
     return (
         <Base>
             <View style={styles.headerContainer}>
@@ -42,10 +42,10 @@ export default function More(): ReactElement {
             </View>
 
             <View style={styles.moreBoxContainer}>
-                <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={{ flex: 1, marginRight: 6, borderRadius: 16 }}>
+                <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { navigation.navigate('About') }} style={{ flex: 1, marginRight: 6, borderRadius: 16 }}>
                     <View style={styles.moreBox}>
                         <OtherIcon />
-                        <Text style={styles.moreBoxText}>Lainnya</Text>
+                        <Text style={styles.moreBoxText}>Tentang</Text>
                     </View>
                 </TouchableHighlight>
                 <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={{ flex: 1, marginLeft: 6, borderRadius: 16 }}>
