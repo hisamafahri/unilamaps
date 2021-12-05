@@ -16,7 +16,7 @@ import { COLORS } from '../../constant/Color';
 export default function Home({ navigation }: any): ReactElement {
     return (
         <Base>
-            <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={() => { }} style={styles.locationPinnerContainer}>
+            <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={styles.locationPinnerContainer}>
                 <View style={styles.locationPinner}>
                     <TargetIcon />
                     <Text style={styles.pinnerText}>Jl Seroja...</Text>
