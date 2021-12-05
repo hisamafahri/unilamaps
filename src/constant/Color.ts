@@ -7,5 +7,6 @@ export const COLORS = {
     mainPurple: '#3E1B72',
     brightPurple: '#AC67DE',
     secondaryPurple: '#6F5897',
-    inactivePurple: '#B9D4DC'
+    inactivePurple: '#B9D4DC',
+    mainGreen: '#00DC80'
 }
