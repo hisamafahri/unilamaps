@@ -48,7 +48,7 @@ export default function More({ navigation }: any): ReactElement {
                         <Text style={styles.moreBoxText}>Tentang</Text>
                     </View>
                 </TouchableHighlight>
-                <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={{ flex: 1, marginLeft: 6, borderRadius: 16 }}>
+                <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { navigation.navigate('Contact') }} style={{ flex: 1, marginLeft: 6, borderRadius: 16 }}>
                     <View style={styles.moreBox}>
                         <ContactIcon style={{ alignSelf: 'flex-end' }} />
                         <Text style={styles.moreBoxText}>Kontak</Text>
