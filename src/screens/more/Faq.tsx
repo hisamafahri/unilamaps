@@ -8,13 +8,29 @@ import ChevronIcon from '../../../assets/svg/helper/ChevronIcon'
 
 const sections = [
     {
-        title: 'Lorem',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        title: 'Apakah Unila Maps Open-Source?',
+        content: 'Iya!!! Mampir aja ke remote codebase-nya di https://github.com/hisamafahri/unilamaps',
     },
     {
-        title: 'Second',
-        content: 'Lorem ipsum2...',
+        title: 'Kenapa Unila Maps dibuat?',
+        content: 'Pengen aja.',
     },
+    {
+        title: 'Apakah Unila Maps sudah tersedia di platform iOS?',
+        content: 'Saat ini belum. Namun akan segera hadir.'
+    },
+    {
+        title: 'Apakah pihak Unila Maps memiliki afiliasi secara langsung dengan pihak kampus Universitas Lampung?',
+        content: 'Tidak. Aplikasi Unila Maps merupakan karya independen. Aplikasi ini juga bukan merupakan tugas mata kuliah tertentu. \n\nUnila Maps murni merupakan projek yang codebase-nya di-open source-kan ke publik, dan dari proses inisiasi projek hingga pengembangan saat ini tidak memiliki afiliasi secara langsung dengan pihak Universitas.'
+    },
+    {
+        title: 'Kenapa ada donasi untuk Unila Maps?',
+        content: 'Pengembang berkomitmen agar Unila Maps dapat senantiasa gratis dan bebas dari iklan. \n\nOleh karena itu, pengembang berinisiatif untuk membuka donasi agar dapat terus mempertahankan komitmen tersebut.'
+    },
+    {
+        title: 'Saya memiliki saran, kritik, dan pertanyaan, bagaimana saya bisa menghubungi pengembang aplikasi?',
+        content: 'Silahkan kunjungi bagian "Kontak".'
+    }
 ];
 
 export default function Faq({ navigation }: any): ReactElement {
