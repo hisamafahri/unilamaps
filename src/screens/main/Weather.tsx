@@ -53,7 +53,7 @@ export default function Weather(): ReactElement {
                 } else if (weatherCode == '09d' || weatherCode == '09n') { // Shower rain
                     setWeatherIcon(<RainIcon />)
                     setWeatherDetail('Hmmm... Hujan nih. \nJangan lupa sedia payung ya!')
-                } else if (weatherCode == '10d') { // Sunny Rain
+                } else if (weatherCode == '10d' || weatherCode == '10n') { // Sunny Rain
                     setWeatherIcon(<SunnyRainIcon />)
                     setWeatherDetail('Kayaknya mau hujan, nih. \nJaga kesahatan selalu ya.')
                 } else if (weatherCode == '11d' || weatherCode == '11n') { // Thunderstorm
