@@ -14,6 +14,7 @@ import TermsAndConditions from './src/screens/more/TermsAndConditions';
 import PrivacyPolicy from './src/screens/more/PrivacyPolicy';
 import Contact from './src/screens/more/Contact';
 import Faq from './src/screens/more/Faq';
+import Donation from './src/screens/more/Donation';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -37,6 +38,7 @@ export default function App(navigation: any): ReactElement {
         <Stack.Screen name="About" component={About} options={{ headerShown: false }} />
         <Stack.Screen name="Contact" component={Contact} options={{ headerShown: false }} />
         <Stack.Screen name="Faq" component={Faq} options={{ headerShown: false }} />
+        <Stack.Screen name="Donation" component={Donation} options={{ headerShown: false }} />
         <Stack.Screen name="PrivacyPolicy" component={PrivacyPolicy} options={{ headerShown: true, title: 'Kebijakan Privasi' }} />
         <Stack.Screen name="TermsAndConditions" component={TermsAndConditions} options={{ headerShown: true, title: 'Syarat & Ketentuan' }} />
       </Stack.Navigator>

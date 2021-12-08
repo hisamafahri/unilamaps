@@ -16,7 +16,7 @@ export default function More({ navigation }: any): ReactElement {
             <View style={styles.headerContainer}>
                 <Text style={styles.bigText}>Lainnya</Text>
             </View>
-            <TouchableHighlight underlayColor={COLORS.mainPurple} onPress={() => { }} style={{ marginHorizontal: 16, marginTop: 12, borderRadius: 16 }}>
+            <TouchableHighlight underlayColor={COLORS.mainPurple} onPress={() => { navigation.navigate('Donation') }} style={{ marginHorizontal: 16, marginTop: 12, borderRadius: 16 }}>
                 <View style={styles.donationBoxContainer}>
                     <View style={styles.donationBoxTextConatainer}>
                         <Text style={styles.donationBoxTitle}>DONASI</Text>
