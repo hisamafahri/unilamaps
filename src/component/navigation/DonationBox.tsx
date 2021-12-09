@@ -4,23 +4,23 @@ import CopyIcon from '../../../assets/svg/helper/CopyIcon'
 import OvoIcon from '../../../assets/svg/payment/OvoIcon'
 import { COLORS } from '../../constant/Color'
 
-export default function DonationBox({ navigation }: any): ReactElement {
+export default function DonationBox({ paymentProvider = 'Provider', accountNumber = 'xxxx xxxx xxxx', accountName = 'Unila Maps', paymentProviderIcon = <OvoIcon /> }: any): ReactElement {
     return (
         <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={{ marginHorizontal: 16, borderRadius: 16, marginTop: 12 }}>
             <View style={styles.donationBoxContainer}>
                 <View style={styles.donationBoxLine}>
                     <View>
-                        <Text style={{ fontFamily: 'Rubik-Medium', fontSize: 24 }}>0821 2345 6789</Text>
-                        <Text style={{ fontFamily: 'Rubik-Light', fontSize: 14 }}>a.n. Unila Maps</Text>
+                        <Text style={{ fontFamily: 'Rubik-Medium', fontSize: 24 }}>{accountNumber}</Text>
+                        <Text style={{ fontFamily: 'Rubik-Light', fontSize: 14 }}>a.n. {accountName}</Text>
                     </View>
                     <CopyIcon />
                 </View>
 
                 <View style={styles.donationBoxLine}>
                     <View style={styles.donationBoxPaymentContainer}>
-                        <OvoIcon />
+                        {paymentProviderIcon}
                     </View>
-                    <Text style={{ fontFamily: 'Rubik-Bold', fontSize: 44, }}>OVO</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold', fontSize: 44, }}>{paymentProvider}</Text>
                 </View>
             </View>
         </TouchableHighlight>

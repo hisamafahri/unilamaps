@@ -2,6 +2,8 @@ import React, { ReactElement } from 'react'
 import { StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import ArrowIcon from '../../../assets/svg/helper/ArrowIcon'
 import CopyIcon from '../../../assets/svg/helper/CopyIcon'
+import DanaIcon from '../../../assets/svg/payment/DanaIcon'
+import GojekIcon from '../../../assets/svg/payment/GojekIcon'
 import OvoIcon from '../../../assets/svg/payment/OvoIcon'
 import Base from '../../component/container/Base'
 import DonationBox from '../../component/navigation/DonationBox'
@@ -20,8 +22,9 @@ export default function Donation({ navigation }: any): ReactElement {
                 <Text style={styles.detailText}>Donasi untuk pengembangan Unila Maps! Donasi kamu akan sangat membantu lho.</Text>
             </View>
 
-            <DonationBox />
-            <DonationBox />
+            <DonationBox accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='OVO' paymentProviderIcon={<OvoIcon />} />
+            <DonationBox accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='Dana' paymentProviderIcon={<DanaIcon />}/>
+            <DonationBox accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='GoPay' paymentProviderIcon={<GojekIcon />}/>
         </Base>
     )
 }

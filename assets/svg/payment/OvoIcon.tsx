@@ -10,8 +10,8 @@ function OvoIcon(props: any) {
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
-            <Circle cx={12} cy={12} r={7.375} stroke="#000" strokeWidth={1.25} />
-            <Circle cx={12} cy={12} r={4.375} stroke="#000" strokeWidth={1.25} />
+            <Circle cx={12} cy={12} r={7.375} stroke="#4C2A86" strokeWidth={1.25} />
+            <Circle cx={12} cy={12} r={4.375} stroke="#4C2A86" strokeWidth={1.25} />
         </Svg>
     );
 }
