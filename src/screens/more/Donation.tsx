@@ -8,8 +8,24 @@ import OvoIcon from '../../../assets/svg/payment/OvoIcon'
 import Base from '../../component/container/Base'
 import DonationBox from '../../component/navigation/DonationBox'
 import { COLORS } from '../../constant/Color'
+import Clipboard from '@react-native-clipboard/clipboard';
+import Snackbar from 'react-native-snackbar';
 
 export default function Donation({ navigation }: any): ReactElement {
+    const copyToClipboard = async (value: any) => {
+        Clipboard.setString(value);
+        Snackbar.show({
+            text: 'Nomor akun ' + value + ' disalin!',
+            duration: Snackbar.LENGTH_SHORT,
+            backgroundColor: COLORS.mainPurple,
+            fontFamily: 'Rubik-Regular',
+            action: {
+                text: 'Tutup',
+                textColor: COLORS.white,
+                onPress: () => Snackbar.dismiss(),
+            },
+        });
+    };
     return (
         <Base>
             <View style={styles.headerContainer}>
@@ -22,9 +38,9 @@ export default function Donation({ navigation }: any): ReactElement {
                 <Text style={styles.detailText}>Donasi untuk pengembangan Unila Maps! Donasi kamu akan sangat membantu lho.</Text>
             </View>
 
-            <DonationBox accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='OVO' paymentProviderIcon={<OvoIcon />} />
-            <DonationBox accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='Dana' paymentProviderIcon={<DanaIcon />}/>
-            <DonationBox accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='GoPay' paymentProviderIcon={<GojekIcon />}/>
+            <DonationBox onPress={() => copyToClipboard('OVO')} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='OVO' paymentProviderIcon={<OvoIcon />} />
+            <DonationBox onPress={() => copyToClipboard('Dana')} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='Dana' paymentProviderIcon={<DanaIcon />} />
+            <DonationBox onPress={() => copyToClipboard('GoPay')} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='GoPay' paymentProviderIcon={<GojekIcon />} />
         </Base>
     )
 }
