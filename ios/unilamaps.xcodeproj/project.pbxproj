@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* unilamapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* unilamapsTests.m */; };
+		00E356F31AD99517003FC87E /* UnilaMapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* UnilaMapsTests.m */; };
 		092316E1423749D8BD9D071A /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FE2A03052EE45B3BD9492FA /* Rubik-Black.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1F27470C832844AAA693981E /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05BB4B0ACBF04E61A6CAB6AF /* Rubik-Bold.ttf */; };
-		6172F2D35A4C3AA820D92908 /* libPods-unilamaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-unilamaps.a */; };
+		6172F2D35A4C3AA820D92908 /* libPods-UnilaMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-UnilaMaps.a */; };
 		6796585F8F324869AC2E0EF9 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 656F5599B4D94C1FA1E4499E /* Rubik-ExtraBold.ttf */; };
-		7EF68E3733C33B6898317E18 /* libPods-unilamaps-unilamapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-unilamaps-unilamapsTests.a */; };
+		7EF68E3733C33B6898317E18 /* libPods-UnilaMaps-UnilaMapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-UnilaMaps-UnilaMapsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		860A211FAF0F4125B8A79FA8 /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8A325A239CEC4B7D99F32AF4 /* Rubik-Italic.ttf */; };
 		AEBEB0449DE240CFB0662575 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D862A4E940A343BE93B79F22 /* Rubik-Light.ttf */; };
@@ -30,38 +30,38 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = unilamaps;
+			remoteInfo = UnilaMaps;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* unilamapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unilamapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* UnilaMapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnilaMapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* unilamapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unilamapsTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* UnilaMapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnilaMapsTests.m; sourceTree = "<group>"; };
 		05BB4B0ACBF04E61A6CAB6AF /* Rubik-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.ttf"; path = "../assets/fonts/Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* unilamaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unilamaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = unilamaps/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = unilamaps/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = unilamaps/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = unilamaps/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = unilamaps/main.m; sourceTree = "<group>"; };
-		1D0AE47A65C8663E3B452821 /* Pods-unilamaps-unilamapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps-unilamapsTests.release.xcconfig"; path = "Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests.release.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* UnilaMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnilaMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = UnilaMaps/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = UnilaMaps/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = UnilaMaps/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = UnilaMaps/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = UnilaMaps/main.m; sourceTree = "<group>"; };
+		1D0AE47A65C8663E3B452821 /* Pods-UnilaMaps-UnilaMapsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnilaMaps-UnilaMapsTests.release.xcconfig"; path = "Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests.release.xcconfig"; sourceTree = "<group>"; };
 		5364765F8F8F45DBB24823E3 /* MavenPro-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-SemiBold.ttf"; path = "../assets/fonts/MavenPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		5FE2A03052EE45B3BD9492FA /* Rubik-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Black.ttf"; path = "../assets/fonts/Rubik-Black.ttf"; sourceTree = "<group>"; };
 		624BBF1C4D3247549C539026 /* Rubik-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.ttf"; path = "../assets/fonts/Rubik-SemiBold.ttf"; sourceTree = "<group>"; };
-		6423831EA8574132BED9D8CC /* libPods-unilamaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unilamaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6423831EA8574132BED9D8CC /* libPods-UnilaMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnilaMaps.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F5599B4D94C1FA1E4499E /* Rubik-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-ExtraBold.ttf"; path = "../assets/fonts/Rubik-ExtraBold.ttf"; sourceTree = "<group>"; };
-		6C97AB639B58BBB4B15BBE30 /* Pods-unilamaps-unilamapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps-unilamapsTests.debug.xcconfig"; path = "Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = unilamaps/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6C97AB639B58BBB4B15BBE30 /* Pods-UnilaMaps-UnilaMapsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnilaMaps-UnilaMapsTests.debug.xcconfig"; path = "Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = UnilaMaps/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A325A239CEC4B7D99F32AF4 /* Rubik-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Italic.ttf"; path = "../assets/fonts/Rubik-Italic.ttf"; sourceTree = "<group>"; };
 		9724E6CAEC7142C5988B185D /* MavenPro-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Medium.ttf"; path = "../assets/fonts/MavenPro-Medium.ttf"; sourceTree = "<group>"; };
 		9BE16D6CE263457A9FBA8815 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.ttf"; path = "../assets/fonts/Rubik-Medium.ttf"; sourceTree = "<group>"; };
-		ABFE59519B596E51CEFDCCC0 /* libPods-unilamaps-unilamapsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unilamaps-unilamapsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABFE59519B596E51CEFDCCC0 /* libPods-UnilaMaps-UnilaMapsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnilaMaps-UnilaMapsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37B5DC6FC9C4C34BD07F5F7 /* MavenPro-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Bold.ttf"; path = "../assets/fonts/MavenPro-Bold.ttf"; sourceTree = "<group>"; };
 		B6C59BAD1D5043C78D8129F7 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.ttf"; path = "../assets/fonts/Rubik-Regular.ttf"; sourceTree = "<group>"; };
-		C0A881CF5CF3F2B244570E2A /* Pods-unilamaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps.debug.xcconfig"; path = "Target Support Files/Pods-unilamaps/Pods-unilamaps.debug.xcconfig"; sourceTree = "<group>"; };
+		C0A881CF5CF3F2B244570E2A /* Pods-UnilaMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnilaMaps.debug.xcconfig"; path = "Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps.debug.xcconfig"; sourceTree = "<group>"; };
 		CCC1DA29B68E4F28B579F0B2 /* MavenPro-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Black.ttf"; path = "../assets/fonts/MavenPro-Black.ttf"; sourceTree = "<group>"; };
-		D00AAFFCFCFDA5787532823F /* Pods-unilamaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unilamaps.release.xcconfig"; path = "Target Support Files/Pods-unilamaps/Pods-unilamaps.release.xcconfig"; sourceTree = "<group>"; };
+		D00AAFFCFCFDA5787532823F /* Pods-UnilaMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnilaMaps.release.xcconfig"; path = "Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps.release.xcconfig"; sourceTree = "<group>"; };
 		D862A4E940A343BE93B79F22 /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../assets/fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
 		E2B5C6610E2349479192EC54 /* MavenPro-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-ExtraBold.ttf"; path = "../assets/fonts/MavenPro-ExtraBold.ttf"; sourceTree = "<group>"; };
 		E3237274D44C4A1292920C63 /* MavenPro-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "MavenPro-Regular.ttf"; path = "../assets/fonts/MavenPro-Regular.ttf"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EF68E3733C33B6898317E18 /* libPods-unilamaps-unilamapsTests.a in Frameworks */,
+				7EF68E3733C33B6898317E18 /* libPods-UnilaMaps-UnilaMapsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,20 +81,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6172F2D35A4C3AA820D92908 /* libPods-unilamaps.a in Frameworks */,
+				6172F2D35A4C3AA820D92908 /* libPods-UnilaMaps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* unilamapsTests */ = {
+		00E356EF1AD99517003FC87E /* UnilaMapsTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* unilamapsTests.m */,
+				00E356F21AD99517003FC87E /* UnilaMapsTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = unilamapsTests;
+			path = UnilaMapsTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -105,7 +105,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* unilamaps */ = {
+		13B07FAE1A68108700A75B9A /* UnilaMaps */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -115,15 +115,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = unilamaps;
+			name = UnilaMaps;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				6423831EA8574132BED9D8CC /* libPods-unilamaps.a */,
-				ABFE59519B596E51CEFDCCC0 /* libPods-unilamaps-unilamapsTests.a */,
+				6423831EA8574132BED9D8CC /* libPods-UnilaMaps.a */,
+				ABFE59519B596E51CEFDCCC0 /* libPods-UnilaMaps-UnilaMapsTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,9 +138,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* unilamaps */,
+				13B07FAE1A68108700A75B9A /* UnilaMaps */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* unilamapsTests */,
+				00E356EF1AD99517003FC87E /* UnilaMapsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
@@ -154,8 +154,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* unilamaps.app */,
-				00E356EE1AD99517003FC87E /* unilamapsTests.xctest */,
+				13B07F961A680F5B00A75B9A /* UnilaMaps.app */,
+				00E356EE1AD99517003FC87E /* UnilaMapsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,10 +184,10 @@
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C0A881CF5CF3F2B244570E2A /* Pods-unilamaps.debug.xcconfig */,
-				D00AAFFCFCFDA5787532823F /* Pods-unilamaps.release.xcconfig */,
-				6C97AB639B58BBB4B15BBE30 /* Pods-unilamaps-unilamapsTests.debug.xcconfig */,
-				1D0AE47A65C8663E3B452821 /* Pods-unilamaps-unilamapsTests.release.xcconfig */,
+				C0A881CF5CF3F2B244570E2A /* Pods-UnilaMaps.debug.xcconfig */,
+				D00AAFFCFCFDA5787532823F /* Pods-UnilaMaps.release.xcconfig */,
+				6C97AB639B58BBB4B15BBE30 /* Pods-UnilaMaps-UnilaMapsTests.debug.xcconfig */,
+				1D0AE47A65C8663E3B452821 /* Pods-UnilaMaps-UnilaMapsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* unilamapsTests */ = {
+		00E356ED1AD99517003FC87E /* UnilaMapsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "unilamapsTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "UnilaMapsTests" */;
 			buildPhases = (
 				A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -211,14 +211,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = unilamapsTests;
-			productName = unilamapsTests;
-			productReference = 00E356EE1AD99517003FC87E /* unilamapsTests.xctest */;
+			name = UnilaMapsTests;
+			productName = UnilaMapsTests;
+			productReference = 00E356EE1AD99517003FC87E /* UnilaMapsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* unilamaps */ = {
+		13B07F861A680F5B00A75B9A /* UnilaMaps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "unilamaps" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "UnilaMaps" */;
 			buildPhases = (
 				3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -233,9 +233,9 @@
 			);
 			dependencies = (
 			);
-			name = unilamaps;
-			productName = unilamaps;
-			productReference = 13B07F961A680F5B00A75B9A /* unilamaps.app */;
+			name = UnilaMaps;
+			productName = UnilaMaps;
+			productReference = 13B07F961A680F5B00A75B9A /* UnilaMaps.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -268,8 +268,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* unilamaps */,
-				00E356ED1AD99517003FC87E /* unilamapsTests */,
+				13B07F861A680F5B00A75B9A /* UnilaMaps */,
+				00E356ED1AD99517003FC87E /* UnilaMapsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,15 +322,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3E482C27206C4DEF2FE45063 /* [CP] Check Pods Manifest.lock */ = {
@@ -348,7 +348,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-unilamaps-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UnilaMaps-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -361,15 +361,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unilamaps-unilamapsTests/Pods-unilamaps-unilamapsTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps-UnilaMapsTests/Pods-UnilaMaps-UnilaMapsTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A130D646172E58E1D159D8F2 /* [CP] Check Pods Manifest.lock */ = {
@@ -387,7 +387,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-unilamaps-unilamapsTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-UnilaMaps-UnilaMapsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -400,15 +400,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps/Pods-unilamaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps/Pods-unilamaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unilamaps/Pods-unilamaps-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8AC78B0264D0F9F6F6D630E /* [CP] Embed Pods Frameworks */ = {
@@ -417,15 +417,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps/Pods-unilamaps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-unilamaps/Pods-unilamaps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-unilamaps/Pods-unilamaps-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UnilaMaps/Pods-UnilaMaps-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -454,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* unilamapsTests.m in Sources */,
+				00E356F31AD99517003FC87E /* UnilaMapsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +472,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* unilamaps */;
+			target = 13B07F861A680F5B00A75B9A /* UnilaMaps */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,14 +480,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-unilamaps-unilamapsTests.debug.xcconfig */;
+			baseConfigurationReference = 6C97AB639B58BBB4B15BBE30 /* Pods-UnilaMaps-UnilaMapsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = unilamapsTests/Info.plist;
+				INFOPLIST_FILE = UnilaMapsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,17 +501,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unilamaps.app/unilamaps";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnilaMaps.app/UnilaMaps";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-unilamaps-unilamapsTests.release.xcconfig */;
+			baseConfigurationReference = 1D0AE47A65C8663E3B452821 /* Pods-UnilaMaps-UnilaMapsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = unilamapsTests/Info.plist;
+				INFOPLIST_FILE = UnilaMapsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,19 +525,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/unilamaps.app/unilamaps";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnilaMaps.app/UnilaMaps";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-unilamaps.debug.xcconfig */;
+			baseConfigurationReference = C0A881CF5CF3F2B244570E2A /* Pods-UnilaMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = unilamaps/Info.plist;
+				INFOPLIST_FILE = UnilaMaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -548,7 +548,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = unilamaps;
+				PRODUCT_NAME = UnilaMaps;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -557,12 +557,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-unilamaps.release.xcconfig */;
+			baseConfigurationReference = D00AAFFCFCFDA5787532823F /* Pods-UnilaMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = unilamaps/Info.plist;
+				INFOPLIST_FILE = UnilaMaps/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,7 +573,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = unilamaps;
+				PRODUCT_NAME = UnilaMaps;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -707,7 +707,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "unilamapsTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "UnilaMapsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -716,7 +716,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "unilamaps" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "UnilaMaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,

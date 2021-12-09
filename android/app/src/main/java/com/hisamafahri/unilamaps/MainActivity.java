@@ -1,4 +1,4 @@
-package com.unilamaps;
+package com.hisamafahri.unilamaps;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "unilamaps";
+    return "UnilaMaps";
   }
   @Override
   protected void onCreate(Bundle savedInstanceState) {

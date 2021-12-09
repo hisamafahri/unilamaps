@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface unilamapsTests : XCTestCase
+@interface UnilaMapsTests : XCTestCase
 
 @end
 
-@implementation unilamapsTests
+@implementation UnilaMapsTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {
