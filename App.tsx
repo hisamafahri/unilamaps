@@ -15,6 +15,7 @@ import PrivacyPolicy from './src/screens/more/PrivacyPolicy';
 import Contact from './src/screens/more/Contact';
 import Faq from './src/screens/more/Faq';
 import Donation from './src/screens/more/Donation';
+import WebViewPage from './src/screens/utils/WebViewPage';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -32,8 +33,9 @@ export default function App(navigation: any): ReactElement {
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
         <Stack.Screen name="TabNav" component={TabNav} options={{ headerShown: false }} />
+        <Stack.Screen name="WebViewPage" component={WebViewPage} options={{ headerShown: true }} />
         <Stack.Screen name="Location" component={Location} options={{ headerShown: false }} />
-        
+
         {/* More */}
         <Stack.Screen name="About" component={About} options={{ headerShown: false }} />
         <Stack.Screen name="Contact" component={Contact} options={{ headerShown: false }} />

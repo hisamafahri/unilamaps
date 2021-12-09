@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
+import { Linking, StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import ArrowIcon from '../../../assets/svg/helper/ArrowIcon'
 import EmailIcon from '../../../assets/svg/social/EmailIcon'
 import InstagramIcon from '../../../assets/svg/social/InstagramIcon'
@@ -9,6 +9,14 @@ import StickBox from '../../component/navigation/StickBox'
 import { COLORS } from '../../constant/Color'
 
 export default function Contact({ navigation }: any): ReactElement {
+    const openLinking = async (url: any) => {
+        const isSupported = await Linking.canOpenURL(url)
+        if (isSupported) {
+            await Linking.openURL(url)
+        } else {
+            navigation.navigate('WebViewPage', { link: url })
+        }
+    }
     return (
         <Base>
             <View style={styles.headerContainer}>
@@ -21,9 +29,9 @@ export default function Contact({ navigation }: any): ReactElement {
                 <Text style={styles.detailText}>Hai! Mau request fitur? Atau ada hal lain? Hubungi kami ya! Nyapa aja juga boleh kok.</Text>
             </View>
 
-            <StickBox onPress={() => {}} label='@unilamaps' leadIcon={<InstagramIcon />} />
-            <StickBox onPress={() => {}} label='@unilamaps' leadIcon={<TwitterIcon />} />
-            <StickBox onPress={() => {}} label='unilamaps@gmail.com' leadIcon={<EmailIcon />} />
+            <StickBox onPress={() => openLinking('https://instagram.com/unilamaps')} label='@unilamaps' leadIcon={<InstagramIcon />} />
+            <StickBox onPress={() => openLinking('https://twitter.com/unilamaps')} label='@unilamaps' leadIcon={<TwitterIcon />} />
+            <StickBox onPress={() => openLinking('mailto:unilamaps@gmail.com')} label='unilamaps@gmail.com' leadIcon={<EmailIcon />} />
         </Base>
     )
 }

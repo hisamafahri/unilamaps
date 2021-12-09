@@ -1,7 +1,6 @@
 import React, { ReactElement } from 'react'
-import { StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
+import { StyleSheet, Text, TouchableWithoutFeedback, View } from 'react-native'
 import ArrowIcon from '../../../assets/svg/helper/ArrowIcon'
-import CopyIcon from '../../../assets/svg/helper/CopyIcon'
 import DanaIcon from '../../../assets/svg/payment/DanaIcon'
 import GojekIcon from '../../../assets/svg/payment/GojekIcon'
 import OvoIcon from '../../../assets/svg/payment/OvoIcon'
@@ -12,7 +11,7 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import Snackbar from 'react-native-snackbar';
 
 export default function Donation({ navigation }: any): ReactElement {
-    const copyToClipboard = async (value: any) => {
+    const copyToClipboard = (value: any) => {
         Clipboard.setString(value);
         Snackbar.show({
             text: 'Nomor akun ' + value + ' disalin!',
