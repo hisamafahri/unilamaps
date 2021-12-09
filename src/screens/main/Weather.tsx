@@ -26,7 +26,7 @@ const cityId = '1624917' // ID of bandar lampung city
 const weatherApiEndpoint = `https://api.openweathermap.org/data/2.5/weather?id=${cityId}&units=metric&lang=id&appid=${WEATHER_API_KEY}`
 
 export default function Weather(): ReactElement {
-    let ScreenHeight = Dimensions.get("window").height;
+    let screenWidth = Dimensions.get("window").width;
     const [weatherData, setWeatherData]: any = useState(initializeWeather)
     const [isLoading, setIsLoading] = useState(false)
     const [weatherIcon, setWeatherIcon] = useState(<CloudIcon />)
@@ -88,11 +88,7 @@ export default function Weather(): ReactElement {
     } else {
         return (
             <Base>
-                <View style={{ position: 'absolute', zIndex: -1, top: '30%', right: -84 }}>
-                    {weatherIcon}
-                </View>
-                {/* Screen height minus Top title (76px) and bottom nav tab (120px) + extra 64px */}
-                <View style={[styles.mainContainer, { height: ScreenHeight - 184 }]}>
+                <View style={[styles.mainContainer]}>
                     <View style={styles.weatherStatusContainer}>
                         <View style={styles.headerContainer}>
                             <Text style={styles.bigText}>Cuaca</Text>
@@ -111,6 +107,10 @@ export default function Weather(): ReactElement {
                         </View>
                     </View>
 
+                    <View style={{ width: '100%', marginLeft: screenWidth / 3 }}>
+                        {weatherIcon}
+                    </View>
+
                     <View style={styles.weatherDetailsContainer}>
                         <View style={{ width: 84, borderBottomWidth: 7, borderBottomColor: COLORS.mainPurple }} />
                         <Text style={styles.temperatureText}>{Math.round(weatherData.main.temp)}&#xb0;C</Text>
@@ -118,6 +118,9 @@ export default function Weather(): ReactElement {
                         <Text style={[styles.weatherDate, { marginTop: 6 }]}>{weatherDetail}</Text>
                     </View>
                 </View>
+
+                {/* To make sure the content still visible (24px) on top of bottom bar navigation */}
+                <View style={{ height: 136, width: '100%' }}></View>
             </Base>
         )
     }

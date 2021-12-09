@@ -10,8 +10,8 @@ export default function DonationBox({ onPress, paymentProvider = 'Provider', acc
             <View style={styles.donationBoxContainer}>
                 <View style={styles.donationBoxLine}>
                     <View>
-                        <Text style={{ fontFamily: 'Rubik-Medium', fontSize: 24 }}>{accountNumber}</Text>
-                        <Text style={{ fontFamily: 'Rubik-Light', fontSize: 14 }}>a.n. {accountName}</Text>
+                        <Text style={{ fontFamily: 'Rubik-Medium', fontSize: 24, color: COLORS.black }}>{accountNumber}</Text>
+                        <Text style={{ fontFamily: 'Rubik-Light', fontSize: 14, color: COLORS.black }}>a.n. {accountName}</Text>
                     </View>
                     <CopyIcon />
                 </View>
@@ -20,7 +20,7 @@ export default function DonationBox({ onPress, paymentProvider = 'Provider', acc
                     <View style={styles.donationBoxPaymentContainer}>
                         {paymentProviderIcon}
                     </View>
-                    <Text style={{ fontFamily: 'Rubik-Bold', fontSize: 44, }}>{paymentProvider}</Text>
+                    <Text style={{ fontFamily: 'Rubik-Bold', fontSize: 44, color: COLORS.black }}>{paymentProvider}</Text>
                 </View>
             </View>
         </TouchableHighlight>

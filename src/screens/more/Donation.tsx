@@ -11,10 +11,10 @@ import Clipboard from '@react-native-clipboard/clipboard';
 import Snackbar from 'react-native-snackbar';
 
 export default function Donation({ navigation }: any): ReactElement {
-    const copyToClipboard = (value: any) => {
-        Clipboard.setString(value);
+    const copyToClipboard = ({ number, type }: any) => {
+        Clipboard.setString(number);
         Snackbar.show({
-            text: 'Nomor akun ' + value + ' disalin!',
+            text: 'Nomor akun ' + type + ' disalin!',
             duration: Snackbar.LENGTH_SHORT,
             backgroundColor: COLORS.mainPurple,
             fontFamily: 'Rubik-Regular',
@@ -37,9 +37,9 @@ export default function Donation({ navigation }: any): ReactElement {
                 <Text style={styles.detailText}>Donasi untuk pengembangan Unila Maps! Donasi kamu akan sangat membantu lho.</Text>
             </View>
 
-            <DonationBox onPress={() => copyToClipboard('OVO')} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='OVO' paymentProviderIcon={<OvoIcon />} />
-            <DonationBox onPress={() => copyToClipboard('Dana')} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='Dana' paymentProviderIcon={<DanaIcon />} />
-            <DonationBox onPress={() => copyToClipboard('GoPay')} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='GoPay' paymentProviderIcon={<GojekIcon />} />
+            <DonationBox onPress={() => copyToClipboard({ number: '082179462536', type: 'OVO' })} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='OVO' paymentProviderIcon={<OvoIcon />} />
+            <DonationBox onPress={() => copyToClipboard({ number: '082179462536', type: 'Dana' })} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='Dana' paymentProviderIcon={<DanaIcon />} />
+            <DonationBox onPress={() => copyToClipboard({ number: '082179462536', type: 'GoPay' })} accountName='Unila Maps' accountNumber='0821 7946 2536' paymentProvider='GoPay' paymentProviderIcon={<GojekIcon />} />
         </Base>
     )
 }
