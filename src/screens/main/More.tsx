@@ -27,7 +27,7 @@ export default function More({ navigation }: any): ReactElement {
             </TouchableHighlight>
 
             <View style={styles.moreBoxContainer}>
-                <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={{ flex: 1, marginRight: 6, borderRadius: 16 }}>
+                <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { navigation.navigate('Developer') }} style={{ flex: 1, marginRight: 6, borderRadius: 16 }}>
                     <View style={styles.moreBox}>
                         <CodeIcon />
                         <Text style={[styles.moreBoxText, { fontSize: 20 }]}>Meet the Developer</Text>
@@ -55,7 +55,7 @@ export default function More({ navigation }: any): ReactElement {
                     </View>
                 </TouchableHighlight>
             </View>
-            
+
             {/* To make sure the content still visible (24px) on top of bottom bar navigation */}
             <View style={{ height: 136, width: '100%' }}></View>
         </Base>
