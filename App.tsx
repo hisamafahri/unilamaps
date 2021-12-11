@@ -1,5 +1,5 @@
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native'
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useEffect } from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Explore from './src/screens/main/Explore';
 import { COLORS } from './src/constant/Color';
@@ -17,6 +17,7 @@ import Faq from './src/screens/more/Faq';
 import Donation from './src/screens/more/Donation';
 import WebViewPage from './src/screens/utils/WebViewPage';
 import Developer from './src/screens/more/Developer';
+import SplashScreen from 'react-native-splash-screen'
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -30,6 +31,9 @@ const MyTheme = {
 };
 
 export default function App(navigation: any): ReactElement {
+  useEffect(() => {
+    SplashScreen.hide()
+  }, [])
   return (
     <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
