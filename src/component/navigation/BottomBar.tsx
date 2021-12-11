@@ -41,7 +41,7 @@ export default function BottomBar({ state, descriptors, navigation }: any) {
                 return (
                     <TouchableWithoutFeedback onPress={onPress} key={label}>
                         {label == 'Home' ?
-                            <View style={styles.mainButton}>
+                            <View style={[styles.mainButton, { borderTopLeftRadius: 25, }]}>
                                 <HomeIcon onPress={onPress} key={state.index} strokeColor={state.index == 0 ? COLORS.mainPurple : COLORS.inactivePurple} />
                             </View>
                             : label == 'Explore' ?
@@ -53,7 +53,7 @@ export default function BottomBar({ state, descriptors, navigation }: any) {
                                         <WeatherIcon onPress={onPress} key={state.index} strokeColor={state.index == 2 ? COLORS.mainPurple : COLORS.inactivePurple} />
                                     </View>
                                     :
-                                    <View style={styles.mainButton}>
+                                    <View style={[styles.mainButton, { borderTopRightRadius: 25 }]}>
                                         <MoreIcon onPress={onPress} key={state.index} strokeColor={state.index == 3 ? COLORS.mainPurple : COLORS.inactivePurple} />
                                     </View>
                         }
@@ -67,9 +67,6 @@ export default function BottomBar({ state, descriptors, navigation }: any) {
 const styles = StyleSheet.create({
     bottomBarContainer: {
         bottom: 0,
-        backgroundColor: COLORS.brightPurple,
-        borderTopRightRadius: 25,
-        borderTopLeftRadius: 25,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
