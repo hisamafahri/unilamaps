@@ -40,7 +40,23 @@ export default function BottomBar({ state, descriptors, navigation }: any) {
 
                 return (
                     <TouchableWithoutFeedback onPress={onPress} key={label}>
-                        {label == 'Home' ? <HomeIcon key={state.index} strokeColor={state.index == 0 ? COLORS.mainPurple : COLORS.inactivePurple} /> : label == 'Explore' ? <ExploreIcon key={state.index} strokeColor={state.index == 1 ? COLORS.mainPurple : COLORS.inactivePurple} /> : label == 'Weather' ? <WeatherIcon key={state.index} strokeColor={state.index == 2 ? COLORS.mainPurple : COLORS.inactivePurple} /> : <MoreIcon key={state.index} strokeColor={state.index == 3 ? COLORS.mainPurple : COLORS.inactivePurple} />}
+                        {label == 'Home' ?
+                            <View style={styles.mainButton}>
+                                <HomeIcon onPress={onPress} key={state.index} strokeColor={state.index == 0 ? COLORS.mainPurple : COLORS.inactivePurple} />
+                            </View>
+                            : label == 'Explore' ?
+                                <View style={styles.mainButton}>
+                                    <ExploreIcon onPress={onPress} key={state.index} strokeColor={state.index == 1 ? COLORS.mainPurple : COLORS.inactivePurple} />
+                                </View>
+                                : label == 'Weather' ?
+                                    <View style={styles.mainButton}>
+                                        <WeatherIcon onPress={onPress} key={state.index} strokeColor={state.index == 2 ? COLORS.mainPurple : COLORS.inactivePurple} />
+                                    </View>
+                                    :
+                                    <View style={styles.mainButton}>
+                                        <MoreIcon onPress={onPress} key={state.index} strokeColor={state.index == 3 ? COLORS.mainPurple : COLORS.inactivePurple} />
+                                    </View>
+                        }
                     </TouchableWithoutFeedback>
                 );
             })}
@@ -50,18 +66,22 @@ export default function BottomBar({ state, descriptors, navigation }: any) {
 
 const styles = StyleSheet.create({
     bottomBarContainer: {
-        position: 'absolute',
-        width: '100%',
         bottom: 0,
-        backgroundColor: COLORS.white,
+        backgroundColor: COLORS.brightPurple,
         borderTopRightRadius: 25,
         borderTopLeftRadius: 25,
-        paddingHorizontal: 36,
-        paddingBottom: 48,
-        paddingTop: 32,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-evenly'
+    },
+    mainButton: {
+        backgroundColor: COLORS.white,
+        paddingTop: 32,
+        paddingBottom: 48,
+        flex: 1,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 });

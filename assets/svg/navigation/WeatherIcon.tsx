@@ -8,6 +8,7 @@ function WeatherIcon(props: any) {
             height={32}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            onPress={props.onPress}
             {...props}
         >
             <Path fill="#fff" d="M0 0h32v32H0z" />
