@@ -18,6 +18,7 @@ import Donation from './src/screens/more/Donation';
 import WebViewPage from './src/screens/utils/WebViewPage';
 import Developer from './src/screens/more/Developer';
 import SplashScreen from 'react-native-splash-screen'
+import Faculty from './src/screens/navigation/Faculty';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -40,6 +41,7 @@ export default function App(navigation: any): ReactElement {
         <Stack.Screen name="TabNav" component={TabNav} options={{ headerShown: false }} />
         <Stack.Screen name="WebViewPage" component={WebViewPage} options={{ headerShown: true }} />
         <Stack.Screen name="Location" component={Location} options={{ headerShown: false }} />
+        <Stack.Screen name="Faculty" component={Faculty} options={{ headerShown: false }} />
 
         {/* More */}
         <Stack.Screen name="About" component={About} options={{ headerShown: false }} />

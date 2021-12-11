@@ -29,7 +29,7 @@ export default function Home({ navigation }: any): ReactElement {
             </View>
 
             <View style={styles.contentBoxContainer}>
-                <GroupBox onPress={() => { }} label='Kuliah' icon={<BookIcon />} />
+                <GroupBox onPress={() => { navigation.navigate('Faculty') }} label='Kuliah' icon={<BookIcon />} />
                 <GroupBox onPress={() => { }} label='Makan' icon={<FoodIcon />} />
                 <GroupBox onPress={() => { }} label='Praktikum' icon={<LabIcon />} />
             </View>

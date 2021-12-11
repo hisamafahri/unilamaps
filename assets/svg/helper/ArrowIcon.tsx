@@ -10,7 +10,6 @@ function ArrowIcon(props: any) {
             xmlns="http://www.w3.org/2000/svg"
             {...props}
         >
-            <Path fill="#EEF4F6" d="M0 0h24v24H0z" />
             <Path
                 d="M5 12h14M5 12l6 6M5 12l6-6"
                 stroke="#000"
