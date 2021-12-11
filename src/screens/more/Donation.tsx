@@ -27,12 +27,12 @@ export default function Donation({ navigation }: any): ReactElement {
     };
     return (
         <Base>
-            <View style={styles.headerContainer}>
-                <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+            <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+                <View style={styles.headerContainer}>
                     <ArrowIcon />
-                </TouchableWithoutFeedback>
-                <Text style={styles.bigText}>Donasi</Text>
-            </View>
+                    <Text style={styles.bigText}>Donasi</Text>
+                </View>
+            </TouchableWithoutFeedback>
             <View style={styles.detailContainer}>
                 <Text style={styles.detailText}>Donasi untuk pengembangan Unila Maps! Donasi kamu akan sangat membantu lho.</Text>
             </View>

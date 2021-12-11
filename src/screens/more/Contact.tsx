@@ -19,12 +19,12 @@ export default function Contact({ navigation }: any): ReactElement {
     }
     return (
         <Base>
-            <View style={styles.headerContainer}>
-                <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+            <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+                <View style={styles.headerContainer}>
                     <ArrowIcon />
-                </TouchableWithoutFeedback>
-                <Text style={styles.bigText}>Kontak</Text>
-            </View>
+                    <Text style={styles.bigText}>Kontak</Text>
+                </View>
+            </TouchableWithoutFeedback>
             <View style={styles.detailContainer}>
                 <Text style={styles.detailText}>Hai! Mau request fitur? Atau ada hal lain? Hubungi kami ya! Nyapa aja juga boleh kok.</Text>
             </View>

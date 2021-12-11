@@ -22,12 +22,12 @@ export default function Developer({ navigation }: any): ReactElement {
     }
     return (
         <Base>
-            <View style={styles.headerContainer}>
-                <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+            <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+                <View style={styles.headerContainer}>
                     <ArrowIcon />
-                </TouchableWithoutFeedback>
-                <Text style={styles.bigText}>Developer</Text>
-            </View>
+                    <Text style={styles.bigText}>Developer</Text>
+                </View>
+            </TouchableWithoutFeedback>
             <View style={styles.detailContainer}>
                 <Text style={styles.detailText}>Hai! Hisam Ahmad Fahri di sini. Feel free to reach out to me if you have any inquiries or just wanna say hi. :)</Text>
             </View>

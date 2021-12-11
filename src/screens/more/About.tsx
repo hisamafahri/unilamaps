@@ -9,12 +9,12 @@ import { COLORS } from '../../constant/Color';
 export default function About({ navigation }: any): ReactElement {
     return (
         <Base>
-            <View style={styles.headerContainer}>
-                <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+            <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+                <View style={styles.headerContainer}>
                     <ArrowIcon />
-                </TouchableWithoutFeedback>
-                <Text style={styles.bigText}>Tentang</Text>
-            </View>
+                    <Text style={styles.bigText}>Tentang</Text>
+                </View>
+            </TouchableWithoutFeedback>
             <View style={styles.detailContainer}>
                 <Text style={styles.detailText}>Tentang aplikasi, syarat & ketentuan, dan kebijakan privasi.</Text>
             </View>

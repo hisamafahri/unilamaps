@@ -45,7 +45,7 @@ export default function Faq({ navigation }: any): ReactElement {
         );
     };
 
-    const renderContent = (section: any, isActive:any) => {
+    const renderContent = (section: any, isActive: any) => {
         return (
             <View style={styles.accordionContent}>
                 <Text style={{ color: COLORS.black, fontFamily: 'Rubik-Light' }}>{section.content}</Text>
@@ -59,12 +59,12 @@ export default function Faq({ navigation }: any): ReactElement {
 
     return (
         <Base>
-            <View style={styles.headerContainer}>
-                <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+            <TouchableWithoutFeedback onPress={() => { navigation.goBack() }}>
+                <View style={styles.headerContainer}>
                     <ArrowIcon />
-                </TouchableWithoutFeedback>
-                <Text style={styles.bigText}>FAQ</Text>
-            </View>
+                    <Text style={styles.bigText}>FAQ</Text>
+                </View>
+            </TouchableWithoutFeedback>
             <View style={styles.detailContainer}>
                 <Text style={styles.detailText}><Text style={{ fontStyle: 'italic' }}>Frequently asked questions</Text> (pertanyaan yang sering diajukan).</Text>
             </View>
@@ -77,7 +77,7 @@ export default function Faq({ navigation }: any): ReactElement {
                 onChange={updateSections}
                 underlayColor='transparent'
                 sectionContainerStyle={{ backgroundColor: COLORS.white, borderRadius: 16, marginTop: 12 }}
-                containerStyle={{marginHorizontal: 16}}
+                containerStyle={{ marginHorizontal: 16 }}
             />
 
         </Base>
