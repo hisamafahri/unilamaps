@@ -7,7 +7,7 @@ const Base = ({ children }: any) => {
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={{flex: 1}} keyboardVerticalOffset={0}>
                 <ScrollView>
                     <SafeAreaView>
-                        <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content" />
+                        <StatusBar backgroundColor="#EEF4F6" barStyle="dark-content" />
                         {children}
                     </SafeAreaView>
                 </ScrollView>
