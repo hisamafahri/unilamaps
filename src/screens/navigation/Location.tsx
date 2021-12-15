@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react'
-import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
+import { Image, KeyboardAvoidingView, Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import ViewMoreText from 'react-native-view-more-text'
 import DistanceIcon from '../../../assets/svg/helper/DistanceIcon'
 import DurationIcon from '../../../assets/svg/helper/DurationIcon'
@@ -8,9 +8,10 @@ import CircleBackButton from '../../component/navigation/CircleBackButton'
 import { COLORS } from '../../constant/Color'
 
 const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
-// const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
+// const imageUrl = 'https://i.imgur.com/tjwjMC8.png's
 
 export default function Location({ navigation }: any): ReactElement {
+    const topHeight = Platform.OS == 'ios' ? (StatusBar.currentHeight as any + 36) : StatusBar.currentHeight
     function renderViewMore(onPress: any) {
         return (
             <Text onPress={onPress} style={styles.locationDetailTriggerText}>Baca selengkapnya...</Text>
@@ -22,11 +23,11 @@ export default function Location({ navigation }: any): ReactElement {
         )
     }
     return (
-        <Base>
-            <View style={styles.headerContainer}>
+        <ScrollView style={{ backgroundColor: COLORS.white }}>
+            <StatusBar translucent backgroundColor="transparent" />
+            <View style={[styles.headerContainer, { marginTop: topHeight }]}>
                 <CircleBackButton onPress={() => { navigation.goBack() }} />
             </View>
-
             <View style={styles.imageContainer}>
                 <Image
                     style={styles.image}
@@ -66,14 +67,14 @@ export default function Location({ navigation }: any): ReactElement {
                     </Text>
                 </ViewMoreText>
 
-                <TouchableHighlight underlayColor={COLORS.mainPurple} onPress={() => { }} style={{ borderRadius: 100, marginTop: 36, marginBottom: 36, }}>
+                <TouchableHighlight underlayColor={COLORS.mainPurple} onPress={() => { }} style={{ borderRadius: 100, marginTop: 36, marginBottom: 36 }}>
                     <View style={styles.getDirectionContainer}>
                         <Text style={styles.getDirectionText}>PETUNJUK JALAN</Text>
                     </View>
                 </TouchableHighlight>
-            </View>
 
-        </Base>
+            </View>
+        </ScrollView>
     )
 }
 
@@ -82,7 +83,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         zIndex: 10,
         paddingVertical: 4,
-        marginTop: 64,
         marginHorizontal: 16,
         display: 'flex',
         alignItems: 'flex-start',
