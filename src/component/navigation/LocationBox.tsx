@@ -1,6 +1,7 @@
 import React, { ReactElement, useState } from 'react'
-import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
+import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import { COLORS } from '../../constant/Color'
+import FastImage from 'react-native-fast-image'
 
 const notAvailableUrl = 'https://i.imgur.com/tjwjMC8.png'
 // const notAvailableUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
@@ -12,12 +13,13 @@ export default function LocationBox({ onPress, imageUrl = notAvailableUrl, label
             <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={onPress} style={{ borderRadius: 16 }}>
                 <View style={styles.locationBox}>
                     <View style={styles.locationBoxImageContainer}>
-                        <Image
+                        <FastImage
                             style={[styles.locationBoxImage, { display: !isImageLoad ? 'flex' : 'none' }]}
                             onLoadStart={() => setIsImageLoad(true)}
                             onLoad={() => setIsImageLoad(false)}
                             source={{
                                 uri: imageUrl,
+                                priority: FastImage.priority.high,
                             }}
                         />
                         <Text style={[styles.loadingText, { display: isImageLoad ? 'flex' : 'none' }]}>Memuat, tunggu bentar...</Text>

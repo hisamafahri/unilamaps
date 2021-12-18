@@ -1,11 +1,12 @@
 import React, { ReactElement, useState } from 'react'
-import { Image, Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
+import { Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import ViewMoreText from 'react-native-view-more-text'
 import DistanceIcon from '../../../assets/svg/helper/DistanceIcon'
 import DurationIcon from '../../../assets/svg/helper/DurationIcon'
 import ImageView from "react-native-image-viewing";
 import CircleBackButton from '../../component/navigation/CircleBackButton'
 import { COLORS } from '../../constant/Color'
+import FastImage from 'react-native-fast-image'
 
 const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
 // const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
@@ -50,12 +51,13 @@ export default function Location({ navigation }: any): ReactElement {
             <TouchableWithoutFeedback onPress={() => setImageModalVisible(true)}>
                 <View style={styles.imageContainer}>
                     <Text style={[styles.loadingText, { display: isImageLoad ? 'flex' : 'none' }]}>Memuat, tunggu bentar...</Text>
-                    <Image
+                    <FastImage
                         onLoadStart={() => setIsImageLoad(true)}
                         onLoad={() => setIsImageLoad(false)}
                         style={[styles.image, { display: !isImageLoad ? 'flex' : 'none' }]}
                         source={{
                             uri: images[0].uri,
+                            priority: FastImage.priority.high,
                         }}
                     />
                 </View>
