@@ -18,7 +18,7 @@ import { COLORS } from '../../constant/Color'
 const imageUrl = 'https://images.unsplash.com/photo-1571501679680-de32f1e7aad4'
 // const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
 
-export default function Explore({navigation}:any): ReactElement {
+export default function Explore({ navigation }: any): ReactElement {
     const [selectedArea, setSelectedArea] = useState('uni')
     const [areaText, setAreaText] = useState('Area Universitas')
     function changeAreaText(area: any) {
@@ -48,8 +48,10 @@ export default function Explore({navigation}:any): ReactElement {
         <Base>
             <View style={styles.headerContainer}>
                 <Text style={styles.bigText}>Jelajahi</Text>
-                <TouchableWithoutFeedback onPress={() => { }}>
-                    <SearchIcon />
+                <TouchableWithoutFeedback onPress={() => { navigation.navigate('Search') }} >
+                    <View style={{ padding: 16 }}>
+                        <SearchIcon />
+                    </View>
                 </TouchableWithoutFeedback>
             </View>
             <View style={styles.detailContainer}>
@@ -86,7 +88,7 @@ export default function Explore({navigation}:any): ReactElement {
 
 const styles = StyleSheet.create({
     headerContainer: {
-        marginTop: 24,
+        marginTop: 8,
         marginHorizontal: 16,
         paddingRight: 16,
         display: 'flex',
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
     },
     detailContainer: {
         marginHorizontal: 16,
-        marginTop: 16,
+        // marginTop: 16,
         marginBottom: 28
     },
     detailText: {
