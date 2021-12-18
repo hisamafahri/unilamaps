@@ -1,17 +1,30 @@
 import React, { ReactElement, useState } from 'react'
-import { Image, KeyboardAvoidingView, Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
+import { Image, KeyboardAvoidingView, Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import ViewMoreText from 'react-native-view-more-text'
 import DistanceIcon from '../../../assets/svg/helper/DistanceIcon'
 import DurationIcon from '../../../assets/svg/helper/DurationIcon'
-import Base from '../../component/container/Base'
+import ImageView from "react-native-image-viewing";
 import CircleBackButton from '../../component/navigation/CircleBackButton'
 import { COLORS } from '../../constant/Color'
 
-const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
-// const imageUrl = 'https://i.imgur.com/tjwjMC8.png's
+// const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
+// const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
 
 export default function Location({ navigation }: any): ReactElement {
     const topHeight = Platform.OS == 'ios' ? (StatusBar.currentHeight as any + 36) : StatusBar.currentHeight
+    const [imageModalVisible, setImageModalVisible] = useState(false);
+    const [statusBarColor, setstatusBarColor] = useState('transparent')
+    const images = [
+        {
+            uri: "https://images.unsplash.com/photo-1571501679680-de32f1e7aad4",
+        },
+        {
+            uri: "https://images.unsplash.com/photo-1573273787173-0eb81a833b34",
+        },
+        {
+            uri: "https://images.unsplash.com/photo-1569569970363-df7b6160d111",
+        },
+    ]
     function renderViewMore(onPress: any) {
         return (
             <Text onPress={onPress} style={styles.locationDetailTriggerText}>Baca selengkapnya...</Text>
@@ -24,17 +37,25 @@ export default function Location({ navigation }: any): ReactElement {
     }
     return (
         <ScrollView style={{ backgroundColor: COLORS.white }}>
-            <StatusBar translucent backgroundColor="transparent" />
+            <StatusBar translucent backgroundColor={imageModalVisible ? '#000000' : 'transparent'} />
+            <ImageView
+                images={images}
+                imageIndex={0}
+                visible={imageModalVisible}
+                onRequestClose={() => setImageModalVisible(false)}
+            />
             <View style={[styles.headerContainer, { marginTop: topHeight }]}>
                 <CircleBackButton onPress={() => { navigation.goBack() }} />
             </View>
             <View style={styles.imageContainer}>
-                <Image
-                    style={styles.image}
-                    source={{
-                        uri: imageUrl,
-                    }}
-                />
+                <TouchableWithoutFeedback onPress={() => setImageModalVisible(true)}>
+                    <Image
+                        style={styles.image}
+                        source={{
+                            uri: images[0].uri,
+                        }}
+                    />
+                </TouchableWithoutFeedback>
             </View>
 
             <View style={styles.locationContainer}>

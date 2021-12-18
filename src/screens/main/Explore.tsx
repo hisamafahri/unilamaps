@@ -15,8 +15,8 @@ import GroupBox from '../../component/navigation/GroupBox'
 import LocationBox from '../../component/navigation/LocationBox'
 import { COLORS } from '../../constant/Color'
 
-// const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
-const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
+const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
+// const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
 
 export default function Explore({navigation}:any): ReactElement {
     const [selectedArea, setSelectedArea] = useState('uni')
