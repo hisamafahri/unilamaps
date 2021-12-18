@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState } from 'react'
 import { Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import { COLORS } from '../../constant/Color'
 
@@ -6,17 +6,21 @@ const notAvailableUrl = 'https://i.imgur.com/tjwjMC8.png'
 // const notAvailableUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
 
 export default function LocationBox({ onPress, imageUrl = notAvailableUrl, label = 'Location Name', subLabel = 'Location Detail' }: any): ReactElement {
+    const [isImageLoad, setIsImageLoad] = useState(false)
     return (
         <View style={styles.locationBoxContainer}>
             <TouchableHighlight underlayColor={COLORS.underlayWhite} onPress={onPress} style={{ borderRadius: 16 }}>
                 <View style={styles.locationBox}>
                     <View style={styles.locationBoxImageContainer}>
                         <Image
-                            style={styles.locationBoxImage}
+                            style={[styles.locationBoxImage, { display: !isImageLoad ? 'flex' : 'none' }]}
+                            onLoadStart={() => setIsImageLoad(true)}
+                            onLoad={() => setIsImageLoad(false)}
                             source={{
                                 uri: imageUrl,
                             }}
                         />
+                        <Text style={[styles.loadingText, { display: isImageLoad ? 'flex' : 'none' }]}>Memuat, tunggu bentar...</Text>
                     </View>
                     <View style={styles.locationBoxLabelContainer}>
                         <Text style={styles.locationBoxLabel}>{label}</Text>
@@ -39,8 +43,18 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.white
     },
     locationBoxImageContainer: {
+        borderTopRightRadius: 16,
+        borderTopLeftRadius: 16,
         height: 176,
-        width: '100%'
+        width: '100%',
+        backgroundColor: COLORS.backgroundGrey,
+    },
+    loadingText: {
+        fontFamily: 'Rubik-Regular',
+        fontSize: 14,
+        color: COLORS.textGrey,
+        textAlign: 'center',
+        marginTop: 88 // Half of the locationBoxImageContainer height
     },
     locationBoxImage: {
         borderTopRightRadius: 16,

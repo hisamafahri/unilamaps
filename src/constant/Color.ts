@@ -8,5 +8,6 @@ export const COLORS = {
     brightPurple: '#AC67DE',
     secondaryPurple: '#6F5897',
     inactivePurple: '#B9D4DC',
-    mainGreen: '#00DC80'
+    mainGreen: '#00DC80',
+    backgroundGrey: '#E3E3E3'
 }

@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react'
-import { Image, KeyboardAvoidingView, Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
+import { Image, Platform, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, TouchableWithoutFeedback, View } from 'react-native'
 import ViewMoreText from 'react-native-view-more-text'
 import DistanceIcon from '../../../assets/svg/helper/DistanceIcon'
 import DurationIcon from '../../../assets/svg/helper/DurationIcon'
@@ -7,13 +7,13 @@ import ImageView from "react-native-image-viewing";
 import CircleBackButton from '../../component/navigation/CircleBackButton'
 import { COLORS } from '../../constant/Color'
 
-// const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
+const imageUrl = 'https://cdn.wallpapersafari.com/37/51/hPGkYK.jpg'
 // const imageUrl = 'https://i.imgur.com/tjwjMC8.png'
 
 export default function Location({ navigation }: any): ReactElement {
     const topHeight = Platform.OS == 'ios' ? (StatusBar.currentHeight as any + 36) : StatusBar.currentHeight
     const [imageModalVisible, setImageModalVisible] = useState(false);
-    const [statusBarColor, setstatusBarColor] = useState('transparent')
+    const [isImageLoad, setIsImageLoad] = useState(false)
     const images = [
         {
             uri: "https://images.unsplash.com/photo-1571501679680-de32f1e7aad4",
@@ -47,16 +47,19 @@ export default function Location({ navigation }: any): ReactElement {
             <View style={[styles.headerContainer, { marginTop: topHeight }]}>
                 <CircleBackButton onPress={() => { navigation.goBack() }} />
             </View>
-            <View style={styles.imageContainer}>
-                <TouchableWithoutFeedback onPress={() => setImageModalVisible(true)}>
+            <TouchableWithoutFeedback onPress={() => setImageModalVisible(true)}>
+                <View style={styles.imageContainer}>
+                    <Text style={[styles.loadingText, { display: isImageLoad ? 'flex' : 'none' }]}>Memuat, tunggu bentar...</Text>
                     <Image
-                        style={styles.image}
+                        onLoadStart={() => setIsImageLoad(true)}
+                        onLoad={() => setIsImageLoad(false)}
+                        style={[styles.image, { display: !isImageLoad ? 'flex' : 'none' }]}
                         source={{
                             uri: images[0].uri,
                         }}
                     />
-                </TouchableWithoutFeedback>
-            </View>
+                </View>
+            </TouchableWithoutFeedback>
 
             <View style={styles.locationContainer}>
                 <Text style={styles.locationName}>Gedung Rektorat</Text>
@@ -87,15 +90,13 @@ export default function Location({ navigation }: any): ReactElement {
                         Lorem ipsum dolor sit amet, in quo dolorum ponderum, nam veri molestie constituto eu. Eum enim tantas sadipscing ne, ut omnes malorum nostrum cum. Errem populo qui ne, ea ipsum antiopam definitionem eos. Lorem ipsum dolor sit amet, in quo dolorum ponderum, nam veri molestie constituto eu. Eum enim tantas sadipscing ne, ut omnes malorum nostrum cum. Errem populo qui ne, ea ipsum antiopam definitionem eos.
                     </Text>
                 </ViewMoreText>
-
                 <TouchableHighlight underlayColor={COLORS.mainPurple} onPress={() => { }} style={{ borderRadius: 100, marginTop: 36, marginBottom: 36 }}>
                     <View style={styles.getDirectionContainer}>
                         <Text style={styles.getDirectionText}>PETUNJUK JALAN</Text>
                     </View>
                 </TouchableHighlight>
-
             </View>
-        </ScrollView>
+        </ScrollView >
     )
 }
 
@@ -111,7 +112,15 @@ const styles = StyleSheet.create({
     },
     imageContainer: {
         height: 360,
-        width: '100%'
+        width: '100%',
+        backgroundColor: COLORS.backgroundGrey,
+    },
+    loadingText: {
+        fontFamily: 'Rubik-Regular',
+        fontSize: 14,
+        color: COLORS.textGrey,
+        textAlign: 'center',
+        marginTop: 180 // Half of the imageContainer height
     },
     image: {
         width: undefined,
