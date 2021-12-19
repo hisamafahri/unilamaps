@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     },
     areaName: {
         color: COLORS.textGrey,
+        fontFamily: 'Rubik-Light',
         fontSize: 14
     }
 });

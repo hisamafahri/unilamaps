@@ -1,5 +1,5 @@
 import React, { ReactElement, useState } from 'react'
-import { StyleSheet, Text, TextInput, TouchableWithoutFeedback, View } from 'react-native'
+import { Platform, StyleSheet, Text, TextInput, TouchableWithoutFeedback, View } from 'react-native'
 import ArrowIcon from '../../../assets/svg/helper/ArrowIcon'
 import SearchIcon from '../../../assets/svg/helper/search/SearchIcon'
 import SearchIllustration from '../../../assets/svg/helper/search/SearchIllustration'
@@ -23,12 +23,12 @@ export default function Search({ navigation }: any): ReactElement {
 
     function searchLocation(value: any) {
         setSearchValue(value)
+        value = value.toLowerCase()
         if (isEmpty(value)) {
             setValueIsEmpty(true)
             setIsFound(false)
         } else {
             if (value == 'masjid') {
-                console.log('value found');
                 setValueIsEmpty(false)
                 setIsFound(true)
             } else {
@@ -48,7 +48,7 @@ export default function Search({ navigation }: any): ReactElement {
             <View style={styles.searchBoxContainer}>
                 <TextInput
                     placeholder="Cari di Unila Maps"
-                    style={{ flex: 1 }}
+                    style={{ flex: 1, fontFamily: 'Rubik-Regular' }}
                     autoFocus={true}
                     onChangeText={searchLocation}
                     value={searchValue}
@@ -62,7 +62,7 @@ export default function Search({ navigation }: any): ReactElement {
             </View>
             <View style={{ display: isFound ? 'flex' : 'none' }}>
                 <View style={{ width: 112, alignSelf: 'center', marginTop: 16, marginBottom: 36, borderBottomWidth: 1, borderBottomColor: COLORS.mainPurple }} />
-                <SearchResultBox location="Masjid Al-Wasi'i" area='Area Universitas' />
+                <SearchResultBox onPress={() => navigation.navigate('Location')} location="Masjid Al-Wasi'i" area='Area Universitas' />
                 <SearchResultBox location="Gedung Serba Guna" area='Area Universitas' />
             </View>
         </Base>
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
         marginTop: 16,
         borderRadius: 100,
         paddingHorizontal: 20,
-        paddingVertical: 12,
+        paddingVertical: Platform.OS == 'ios' ? 12 : 0,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
