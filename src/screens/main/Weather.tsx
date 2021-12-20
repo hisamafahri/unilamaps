@@ -120,7 +120,7 @@ export default function Weather(): ReactElement {
                 </View>
 
                 {/* To make sure the content still visible (24px) on top of bottom bar navigation */}
-                <View style={{ height: 24, width: '100%' }}></View>
+                {/* <View style={{ height: 24, width: '100%' }}></View> */}
             </Base>
         )
     }
