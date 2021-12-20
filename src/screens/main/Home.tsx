@@ -34,7 +34,7 @@ export default function Home({ navigation }: any): ReactElement {
                 <GroupBox onPress={() => { }} label='Praktikum' icon={<LabIcon />} />
             </View>
             <View style={styles.contentBoxContainer}>
-                <GroupBox onPress={() => { }} label='Ibadah' icon={<PrayIcon />} />
+                <GroupBox onPress={() => { navigation.navigate('Maps') }} label='Ibadah' icon={<PrayIcon />} />
                 <GroupBox onPress={() => { }} label='Toilet' icon={<ToiletIcon />} />
                 <GroupBox onPress={() => { }} label='Olahraga' icon={<SportIcon />} />
             </View>

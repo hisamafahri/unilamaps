@@ -20,6 +20,7 @@ import Developer from './src/screens/more/Developer';
 import SplashScreen from 'react-native-splash-screen'
 import Faculty from './src/screens/navigation/Faculty';
 import Search from './src/screens/navigation/Search';
+import Maps from './src/screens/utils/Maps';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -44,6 +45,7 @@ export default function App(navigation: any): ReactElement {
         <Stack.Screen name="Location" component={Location} options={{ headerShown: false }} />
         <Stack.Screen name="Faculty" component={Faculty} options={{ headerShown: false }} />
         <Stack.Screen name="Search" component={Search} options={{ headerShown: false }} />
+        <Stack.Screen name="Maps" component={Maps} options={{ headerShown: false }} />
 
         {/* More */}
         <Stack.Screen name="About" component={About} options={{ headerShown: false }} />
