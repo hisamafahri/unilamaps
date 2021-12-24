@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useEffect } from 'react'
 import { StyleSheet, Text, TouchableHighlight, View } from 'react-native'
 import AdministrationIcon from '../../../assets/svg/activities/AdministrationIcon';
 import BookIcon from '../../../assets/svg/activities/BookIcon';
@@ -12,14 +12,19 @@ import TargetIcon from '../../../assets/svg/helper/TargetIcon';
 import Base from '../../component/container/Base'
 import GroupBox from '../../component/navigation/GroupBox';
 import { COLORS } from '../../constant/Color';
+import Geolocation from '@react-native-community/geolocation';
+
 
 export default function Home({ navigation }: any): ReactElement {
+    useEffect(() => {
+        Geolocation.getCurrentPosition(info => console.log(info));
+    }, [])
     return (
         <Base>
             <TouchableHighlight underlayColor={COLORS.inactivePurple} onPress={() => { }} style={styles.locationPinnerContainer}>
                 <View style={styles.locationPinner}>
                     <TargetIcon />
-                    <Text style={styles.pinnerText}>Jl Seroja...</Text>
+                    <Text style={styles.pinnerText}>Perbarui lokasi...</Text>
                 </View>
             </TouchableHighlight>
             <View style={styles.welcomeTextContainer}>
@@ -67,7 +72,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
     },
     pinnerText: {
-        color: COLORS.black,
+        color: COLORS.textGrey,
         marginLeft: 12,
         fontFamily: 'Rubik-Regular',
         fontSize: 14

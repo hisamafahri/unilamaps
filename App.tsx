@@ -21,7 +21,9 @@ import SplashScreen from 'react-native-splash-screen'
 import Faculty from './src/screens/navigation/Faculty';
 import Search from './src/screens/navigation/Search';
 import Maps from './src/screens/utils/Maps';
+import Geolocation from '@react-native-community/geolocation';
 
+Geolocation.setRNConfiguration({ skipPermissionRequests: false, authorizationLevel: 'always' });
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 

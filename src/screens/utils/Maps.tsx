@@ -27,6 +27,9 @@ export default function Maps({ navigation }: any): ReactElement {
                 showsCompass={false}
                 style={{ flex: 1 }}
                 moveOnMarkerPress={true} // TODO: Need iOS implementation
+                onMarkerPress={() => setIsLocationBoxVisible(true)}
+                onPress={() => setIsLocationBoxVisible(false)}
+                showsBuildings={false}
                 initialRegion={{
                     latitude: -5.367083911703139,
                     longitude: 105.24312463009939,
@@ -40,7 +43,7 @@ export default function Maps({ navigation }: any): ReactElement {
                         latitude: -5.368199774520813,
                         longitude: 105.24252300091534
                     }}
-                    onPress={() => setIsLocationBoxVisible(true)}
+                    // onPress={() => setIsLocationBoxVisible(true)}
                 >
                     <MapMarker colorCenter={COLORS.mainPurple} colorRing={isLocationBoxVisible ? '#F56792' : '#00DC80'} />
                 </Marker>

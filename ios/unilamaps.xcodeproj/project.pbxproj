@@ -13,6 +13,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1F27470C832844AAA693981E /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05BB4B0ACBF04E61A6CAB6AF /* Rubik-Bold.ttf */; };
+		2FE077EC09497AB15483256A /* libPods-UnilaMaps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-UnilaMaps.a */; };
 		6796585F8F324869AC2E0EF9 /* Rubik-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 656F5599B4D94C1FA1E4499E /* Rubik-ExtraBold.ttf */; };
 		7EF68E3733C33B6898317E18 /* libPods-UnilaMaps-UnilaMapsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-UnilaMaps-UnilaMapsTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
@@ -80,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE077EC09497AB15483256A /* libPods-UnilaMaps.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
