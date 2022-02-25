@@ -25,7 +25,15 @@ npm install
 
 *Note: it is highly recommended to use [Yarn](https://yarnpkg.com/) instead of npm.*
 
-3. Run it in your emulator.
+3. Configure Environment Variable
+
+This project is using [OpenWeatherMap API](https://openweathermap.org/api) for the weather functionality. You can create a new account there. And then in the root of this project, create `.env` file and put the following:
+
+```
+WEATHER_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+4. Run it in your emulator.
 
 Once you've setup everything correctly, you should be able to run it in Android emulator or an iOS simulator (MacOS required):
 
